@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31613.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "multiplos_10", "multiplos_10.csproj", "{BCD7D3D8-43A4-4345-BE7F-CA18E6D84800}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCD7D3D8-43A4-4345-BE7F-CA18E6D84800}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCD7D3D8-43A4-4345-BE7F-CA18E6D84800}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCD7D3D8-43A4-4345-BE7F-CA18E6D84800}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCD7D3D8-43A4-4345-BE7F-CA18E6D84800}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E9AC327A-AA87-409B-B02F-940590ED3120}
+	EndGlobalSection
+EndGlobal
