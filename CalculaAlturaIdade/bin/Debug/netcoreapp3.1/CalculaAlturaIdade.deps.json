@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "CalculaAlturaIdade/1.0.0": {
+        "runtime": {
+          "CalculaAlturaIdade.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CalculaAlturaIdade/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

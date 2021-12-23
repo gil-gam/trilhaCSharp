@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31613.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculaAlturaIdade", "CalculaAlturaIdade.csproj", "{BBF2791E-AF84-4058-91CA-7D608F208D2E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBF2791E-AF84-4058-91CA-7D608F208D2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBF2791E-AF84-4058-91CA-7D608F208D2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBF2791E-AF84-4058-91CA-7D608F208D2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBF2791E-AF84-4058-91CA-7D608F208D2E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3D8001DD-1017-49C1-9054-A0F89CF0515B}
+	EndGlobalSection
+EndGlobal
