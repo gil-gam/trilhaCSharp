@@ -17,49 +17,55 @@ namespace quadradroDeAzulejos
     {
         static void Main(string[] args)
         {
+            double azulejos = 1;
             List<double> verificaQuadrados = new List<double>();
             List<double> totalQuadrados = new List<double>();
-            double azulejos = 1;
+            totalQuadrados.Clear();
+
+
             while (azulejos != 0)
             {
                 Console.WriteLine("Digite a quantidade de azulejos.\nDigite 0 para sair: ");
                 azulejos = Double.Parse(Console.ReadLine());
 
                 //Procurar o maior quadrado dentro do número de azulejos
-                for (double numero = 2; numero <= azulejos; numero++)
+                for (double numero = 2; numero < azulejos; numero++)
                 {
-                    
-                    while (numero <= azulejos)
-                    {
-                        numero = Math.Pow(numero, 2);
-                        if (numero >= azulejos)
-                            continue;
-                        verificaQuadrados.Add(numero);
-                        numero += 1;
-                    }
+                    double quadrado = Math.Pow(numero, 2);
+                    if (quadrado > azulejos)
+                        break;
+                    verificaQuadrados.Add(quadrado);
 
                 }
-                double maiorQuadrado = verificaQuadrados.Max();
-                totalQuadrados.Add(maiorQuadrado);
-                double azulejosSobra = azulejos - maiorQuadrado;
+
+                double quadradoMaior = verificaQuadrados.Max();
+                totalQuadrados.Add(quadradoMaior);
+                double azulejosSobra = azulejos - quadradoMaior;
 
                 //ver quantos múltiplos de 4 tem na sobra
+                double quadradoMenor = 0;
+                double azulejosUltimaSobra = 0;
                 for (int y = 1; y <= azulejosSobra; y++)
-                {
+                {                    
                     if (y % 4 == 0)
                     {
-                        totalQuadrados.Add(y);
+                        quadradoMenor = y;
+                        totalQuadrados.Add(quadradoMenor);
+                        azulejosUltimaSobra = azulejosSobra - y;
+                       
                     }
-
                 }
+
+                double quadradoUnitario = quadradoMaior - quadradoMenor;
+
 
                 Console.WriteLine(
                     "Com {0} ",
                     +azulejos
                     + " azulejos"
                     + " é possível montar "
-                    + totalQuadrados.Count
-                    + " quadrado(s)");
+                    + (totalQuadrados.Count + azulejosUltimaSobra)
+                    + " quadrado(s)"); ;
 
                 totalQuadrados.Clear();
             }
