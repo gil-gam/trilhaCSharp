@@ -1,4 +1,4 @@
-﻿/// <sumary>Faça um algoritmo em pseudocódigo e fluxograma, que carregue um vetor de nove elementos
+﻿/// <sumary>Faça um algoritmo que carregue um vetor de nove elementos
 /// numéricos inteiros, calcule e mostre os números primos e suas respectivas posições dentro do vetor
 /// (considere um vetor zero-based).
 /// </sumary>
