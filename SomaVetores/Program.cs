@@ -1,4 +1,4 @@
-﻿/// <sumary>Faça um programa que carregue dois vetores de dez elementos numéricos cada
+﻿/// <sumary>Faça um programa que carregue dois vetores de 3 elementos numéricos cada
 /// e escreva um vetor resultante da intercalação desses outros dois vetores.
 /// </sumary>
 
