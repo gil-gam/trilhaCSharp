@@ -1,5 +1,7 @@
 ﻿@model IEnumerable<MvcMovie.ViewModels.LogInfo>
 
+
+
 @{
     ViewBag.Title = "Logs";
 }
@@ -11,10 +13,16 @@
 <table class="table">
     <tr>
         <th>
+            Id
+        </th>
+        <th>
             Date
         </th>
         <th>
             User
+        </th>
+        <th>
+            Operation
         </th>
         <th></th>
     </tr>
@@ -23,10 +31,16 @@
     {
         <tr>
             <td>
+                @item.Id
+            </td>
+            <td>
                 @item.Data
             </td>
             <td>
                 @item.Usuario
+            </td>
+            <td>
+                @item.Operacao
             </td>
 
         </tr>

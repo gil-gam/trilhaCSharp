@@ -17,6 +17,6 @@ namespace MvcMovie.Models
         
         public DbSet<Log> Log { get; set; }
 
-        public System.Data.Entity.DbSet<MvcMovie.ViewModels.LogInfo> LogInfoes { get; set; }
+        public System.Data.Entity.DbSet<MvcMovie.ViewModels.LogInfo> LogInfos { get; set; }
     }
 }
