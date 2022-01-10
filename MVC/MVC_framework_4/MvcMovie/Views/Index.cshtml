@@ -1,0 +1,45 @@
+﻿@model IEnumerable<MvcMovie.Models.Log>
+
+@{
+    ViewBag.Title = "Página de Consulta de Logs";
+}
+
+<h2>Index</h2>
+
+<p>
+    
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DataLog)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UsuarioLog)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OperacaoLog)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.DataLog)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.UsuarioLog)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.OperacaoLog)
+    </td>
+    <td>
+        @Html.ActionLink("Details", "Details", new { dataLog = item.DataLog }) |
+        @Html.ActionLink("Details", "Details", new { usuarioLog = item.UsuarioLog }) |
+        @Html.ActionLink("Delete", "Delete", new { operacaoLog = item.OperacaoLog })
+    </td>
+</tr>
+}
+
+</table>

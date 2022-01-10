@@ -1,0 +1,335 @@
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\MvcMovie.dll.config
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\MvcMovie.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\MvcMovie.pdb
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\csc.exe
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\csc.exe.config
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\csc.rsp
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\csi.exe
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\csi.exe.config
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\csi.rsp
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\Microsoft.Managed.Core.targets
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\System.AppContext.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\System.Collections.Immutable.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\System.Console.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\System.Globalization.Calendars.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\System.IO.Compression.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\System.IO.FileSystem.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\System.Net.Http.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\System.Net.Sockets.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\System.Reflection.Metadata.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\System.ValueTuple.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\System.Xml.XmlDocument.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\System.Xml.XPath.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\vbc.exe
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\vbc.exe.config
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\vbc.rsp
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\VBCSCompiler.exe
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\roslyn\VBCSCompiler.exe.config
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\Antlr3.Runtime.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\EntityFramework.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\EntityFramework.SqlServer.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\Microsoft.AspNet.Identity.Core.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\Microsoft.Owin.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\Microsoft.Owin.Security.Cookies.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\Microsoft.Owin.Security.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\Microsoft.Owin.Security.Facebook.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\Microsoft.Owin.Security.Google.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\Microsoft.Owin.Security.OAuth.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\Microsoft.Owin.Security.Twitter.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\Microsoft.Web.Infrastructure.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\Newtonsoft.Json.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\Owin.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\System.Web.Helpers.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\System.Web.Mvc.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\System.Web.Optimization.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\System.Web.Razor.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\System.Web.WebPages.Deployment.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\System.Web.WebPages.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\System.Web.WebPages.Razor.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\WebGrease.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\System.Web.Helpers.xml
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\System.Web.Mvc.xml
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\System.Web.Optimization.xml
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\System.Web.Razor.xml
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\System.Web.WebPages.xml
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\System.Web.WebPages.Deployment.xml
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\System.Web.WebPages.Razor.xml
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\Newtonsoft.Json.xml
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\Antlr3.Runtime.pdb
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\EntityFramework.xml
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\EntityFramework.SqlServer.xml
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\Microsoft.AspNet.Identity.Core.xml
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\Microsoft.Owin.xml
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\Microsoft.Owin.Security.xml
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\Microsoft.Owin.Security.Facebook.xml
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\Microsoft.Owin.Security.Cookies.xml
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\Microsoft.Owin.Security.Google.xml
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\Microsoft.Owin.Security.Twitter.xml
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\Microsoft.Owin.Security.OAuth.xml
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\obj\Debug\MvcMovie.csproj.CoreCompileInputs.cache
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\obj\Debug\MvcMovie.csproj.CopyComplete
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\obj\Debug\MvcMovie.dll
+C:\PROJETOS ESTUDOS\CYBERTRON\Lab05_MVC\MvcMovie\obj\Debug\MvcMovie.pdb
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\MvcMovie.dll.config
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\MvcMovie.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\MvcMovie.pdb
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\csc.exe
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\csc.exe.config
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\csc.rsp
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\csi.exe
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\csi.exe.config
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\csi.rsp
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\Microsoft.Managed.Core.targets
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\System.AppContext.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\System.Collections.Immutable.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\System.Console.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\System.Globalization.Calendars.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\System.IO.Compression.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\System.IO.FileSystem.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\System.Net.Http.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\System.Net.Sockets.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\System.Reflection.Metadata.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\System.ValueTuple.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\System.Xml.XmlDocument.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\System.Xml.XPath.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\vbc.exe
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\vbc.exe.config
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\vbc.rsp
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\VBCSCompiler.exe
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\roslyn\VBCSCompiler.exe.config
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\Antlr3.Runtime.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\EntityFramework.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\EntityFramework.SqlServer.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\Microsoft.AspNet.Identity.Core.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\Microsoft.Owin.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\Microsoft.Owin.Security.Cookies.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\Microsoft.Owin.Security.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\Microsoft.Owin.Security.Facebook.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\Microsoft.Owin.Security.Google.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\Microsoft.Owin.Security.OAuth.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\Microsoft.Owin.Security.Twitter.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\Microsoft.Web.Infrastructure.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\Newtonsoft.Json.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\Owin.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\System.Web.Helpers.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\System.Web.Mvc.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\System.Web.Optimization.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\System.Web.Razor.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\System.Web.WebPages.Deployment.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\System.Web.WebPages.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\System.Web.WebPages.Razor.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\WebGrease.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\System.Web.Helpers.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\System.Web.Mvc.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\System.Web.Optimization.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\System.Web.Razor.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\System.Web.WebPages.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\System.Web.WebPages.Deployment.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\System.Web.WebPages.Razor.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\Newtonsoft.Json.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\Antlr3.Runtime.pdb
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\EntityFramework.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\EntityFramework.SqlServer.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\Microsoft.AspNet.Identity.Core.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\Microsoft.Owin.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\Microsoft.Owin.Security.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\Microsoft.Owin.Security.Facebook.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\Microsoft.Owin.Security.Cookies.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\Microsoft.Owin.Security.Google.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\Microsoft.Owin.Security.Twitter.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\Microsoft.Owin.Security.OAuth.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\obj\Debug\MvcMovie.csproj.CoreCompileInputs.cache
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\obj\Debug\MvcMovie.csproj.CopyComplete
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\obj\Debug\MvcMovie.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\obj\Debug\MvcMovie.pdb
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\obj\Debug\MvcMovie.Migrations.InitialCreate.resources
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\obj\Debug\MvcMovie.csproj.GenerateResource.cache
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\obj\Debug\MvcMovie.Migrations.Profile.resources
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\obj\Debug\MvcMovie.csproj.AssemblyReference.cache
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\obj\Debug\MvcMovie.Migrations.MovieDBContext.Logging.resources
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\obj\Debug\MvcMovie.Migrations.MovieDBContext.Logging1.resources
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\TRILHA .NET WEB\Labs\Lab05_MVC\MvcMovie\obj\Debug\MvcMovie.Migrations.MovieDBContext.Logging2.resources
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\MvcMovie.dll.config
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\MvcMovie.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\MvcMovie.pdb
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\csc.exe
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\csc.exe.config
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\csc.rsp
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\csi.exe
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\csi.exe.config
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\csi.rsp
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\Microsoft.Managed.Core.targets
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\System.AppContext.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\System.Collections.Immutable.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\System.Console.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\System.Globalization.Calendars.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\System.IO.Compression.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\System.IO.FileSystem.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\System.Net.Http.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\System.Net.Sockets.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\System.Reflection.Metadata.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\System.ValueTuple.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\System.Xml.XmlDocument.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\System.Xml.XPath.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\vbc.exe
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\vbc.exe.config
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\vbc.rsp
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\VBCSCompiler.exe
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\roslyn\VBCSCompiler.exe.config
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\Antlr3.Runtime.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\EntityFramework.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\EntityFramework.SqlServer.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\Microsoft.AspNet.Identity.Core.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\Microsoft.Owin.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\Microsoft.Owin.Security.Cookies.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\Microsoft.Owin.Security.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\Microsoft.Owin.Security.Facebook.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\Microsoft.Owin.Security.Google.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\Microsoft.Owin.Security.OAuth.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\Microsoft.Owin.Security.Twitter.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\Microsoft.Web.Infrastructure.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\Newtonsoft.Json.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\Owin.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\System.Web.Helpers.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\System.Web.Mvc.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\System.Web.Optimization.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\System.Web.Razor.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\System.Web.WebPages.Deployment.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\System.Web.WebPages.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\System.Web.WebPages.Razor.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\WebGrease.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\EntityFramework.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\EntityFramework.SqlServer.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\System.Web.Helpers.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\System.Web.Mvc.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\System.Web.Optimization.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\System.Web.Razor.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\System.Web.WebPages.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\System.Web.WebPages.Deployment.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\System.Web.WebPages.Razor.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\Newtonsoft.Json.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\Antlr3.Runtime.pdb
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\Microsoft.AspNet.Identity.Core.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\Microsoft.Owin.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\Microsoft.Owin.Security.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\Microsoft.Owin.Security.Facebook.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\Microsoft.Owin.Security.Cookies.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\Microsoft.Owin.Security.Google.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\Microsoft.Owin.Security.Twitter.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\Microsoft.Owin.Security.OAuth.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\obj\Debug\MvcMovie.csproj.AssemblyReference.cache
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\obj\Debug\MvcMovie.Migrations.InitialCreate.resources
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\obj\Debug\MvcMovie.Migrations.Profile.resources
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\obj\Debug\MvcMovie.Migrations.MovieDBContext.Logging.resources
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\obj\Debug\MvcMovie.Migrations.MovieDBContext.Logging1.resources
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\obj\Debug\MvcMovie.Migrations.MovieDBContext.Logging2.resources
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\obj\Debug\MvcMovie.csproj.GenerateResource.cache
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\obj\Debug\MvcMovie.csproj.CoreCompileInputs.cache
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\obj\Debug\MvcMovie.csproj.CopyComplete
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\obj\Debug\MvcMovie.dll
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\MVC_Gilberto_AM\MvcMovie\obj\Debug\MvcMovie.pdb
