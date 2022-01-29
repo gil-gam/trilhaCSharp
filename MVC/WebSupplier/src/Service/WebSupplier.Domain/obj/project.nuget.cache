@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "V3iKxCyQUitUUaK1aqtAy/pUkvbrFFQnx9uDnPqiHLkmsEPo60cu2TO6JzB6sBkAhXejmiQ+u1tpj/hy6DHn7A==",
+  "success": true,
+  "projectFilePath": "C:\\GILBERTO\\Gilberto\\docs\\NTT Data\\trilha dev c#\\exercicios\\trilhaCSharp\\MVC\\WebSupplier\\src\\Service\\WebSupplier.Domain\\WebSupplier.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gilbe\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512"
+  ],
+  "logs": []
+}
