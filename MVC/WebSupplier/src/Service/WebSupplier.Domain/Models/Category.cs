@@ -20,6 +20,6 @@ namespace WebSupplier.Domain.Models
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = false)]
         public DateTime UpdateDate { get; set; }
         
-        public Product Product { get; set; }
+       
     }
 }

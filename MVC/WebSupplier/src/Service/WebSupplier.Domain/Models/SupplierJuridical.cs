@@ -1,63 +1,53 @@
 ﻿using FluentValidation;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
+using WebSupplier.Domain.Interfaces;
 using WebSupplier.Domain.Tools;
 
 namespace WebSupplier.Domain.Models
 {
     public class SupplierJuridical : Supplier
     {
-        public string CompanyName { get; set; }
-        public string FantasyName { get; set; }
-        public string Cnpj { get; set; }
+        public string CompanyName { get; private set; }
+        public string Cnpj { get; private set; }                
+        public DateTime OpenDate { get; private set; }
 
-        [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = false)]
-        public DateTime OpenDate { get; set; }
-          
 
-        public SupplierJuridical(string companyName, string fantasyName, string cnpj)
+        protected SupplierJuridical() { }
+        public SupplierJuridical(string companyName, string cnpj, bool active, string fantasyName, string zipCode, string street, string number, string neighborhood, string city, string state,
+                                string complement, string reference, string emailAddress, string ddd, string celCelular)
+                                    : base(active, fantasyName, zipCode, street, number, neighborhood, city, state,
+                                                complement, reference, emailAddress, ddd, celCelular)
         {
-            if ((!string.IsNullOrEmpty(companyName)) || (!string.IsNullOrEmpty(fantasyName)))
-                    throw new DomainException("The Company and the Fantasy Name are mandatories!");
-            if (cnpj.IsCnpj()) throw new DomainException("The CNPJ is mandatory!");
+            SetCompanyName(companyName);
+            SetCnpj(cnpj);
+        }
 
-            CompanyName = companyName;
-            Cnpj = cnpj;            
+        public override void SetFantasyName(string value)
+        {
+            base.SetFantasyName(value);
         }
 
         public void SetCompanyName(string value)
         {
-            //validação
+            DomainValidation.ValidateIsNullOrEmpty(value, "The Company Name is mandatory.");
             CompanyName = value;
         }
-
-        public void SetCnpj(string value)
+        private void SetCnpj(string value)
         {
-            if (value.IsCnpj()) throw new DomainException("The CNPJ is mandatory!");
+            DomainValidation.ValidateIsNullOrEmpty(value, "The CNPJ is mandatory.");
             Cnpj = value;
         }
-     
 
-        public class SupplierJuridicalValidator : AbstractValidator<SupplierJuridical>
+        public void SetOpenDate(DateTime value)
         {
-            public SupplierJuridicalValidator()
-            {
-                RuleFor(x => x.CompanyName)
-                    .NotNull()
-                    .NotEmpty()
-                    .WithMessage("Company Name is mandatory")
-                    .Length(5, 256)
-                    .WithMessage("The Company Name field must contain 5 and 256 characters");
+            DomainValidation.ValidateIfTrue(value.Date == DateTime.Now.Date, "Opening date cannot be equal to today");
 
-                RuleFor(x => x.Cnpj.IsCnpj())
-                    .Equal(true)
-                    .WithMessage("Invalid CNPJ");
 
-            }
+
+
+");
+            OpenDate = value;
         }
     }
 }

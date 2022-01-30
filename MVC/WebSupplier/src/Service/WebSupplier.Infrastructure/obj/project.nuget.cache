@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "TFRWK96TC2mtqycyGEInaagQgQjD53WQqxgIen+zhBXOw10ADjTZj7zAMPMJtPSfIUoFfreo6d+KcLu8qGey3A==",
+  "dgSpecHash": "weUmKTGyaTUcZCGBAwqCC7ZyfGMY9JoQ3FuiRoNAPAADnlIN+ARbnIlYY0plNbYNKB/Dk7SxC0nWBE8UUnm8NA==",
   "success": true,
   "projectFilePath": "C:\\GILBERTO\\Gilberto\\docs\\NTT Data\\trilha dev c#\\exercicios\\trilhaCSharp\\MVC\\WebSupplier\\src\\Service\\WebSupplier.Infrastructure\\WebSupplier.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -15,6 +15,7 @@
     "C:\\Users\\gilbe\\.nuget\\packages\\microsoft.entityframeworkcore.design\\3.1.22\\microsoft.entityframeworkcore.design.3.1.22.nupkg.sha512",
     "C:\\Users\\gilbe\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\3.1.22\\microsoft.entityframeworkcore.relational.3.1.22.nupkg.sha512",
     "C:\\Users\\gilbe\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\3.1.22\\microsoft.entityframeworkcore.sqlserver.3.1.22.nupkg.sha512",
+    "C:\\Users\\gilbe\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\3.1.22\\microsoft.entityframeworkcore.tools.3.1.22.nupkg.sha512",
     "C:\\Users\\gilbe\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\3.1.22\\microsoft.extensions.caching.abstractions.3.1.22.nupkg.sha512",
     "C:\\Users\\gilbe\\.nuget\\packages\\microsoft.extensions.caching.memory\\3.1.22\\microsoft.extensions.caching.memory.3.1.22.nupkg.sha512",
     "C:\\Users\\gilbe\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.22\\microsoft.extensions.configuration.3.1.22.nupkg.sha512",

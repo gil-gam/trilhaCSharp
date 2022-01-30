@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace WebSupplier.Domain.Models
 {
@@ -19,6 +16,6 @@ namespace WebSupplier.Domain.Models
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = false)]
         public DateTime UpdateDate { get; set; }
-        public Supplier Supplier { get; set; }
+       
     }
 }

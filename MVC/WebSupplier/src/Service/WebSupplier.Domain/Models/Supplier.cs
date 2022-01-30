@@ -1,53 +1,91 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Linq;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Collections.Generic;
+using WebSupplier.Domain.Tools;
+using WebSupplier.Domain.Models.enums;
 
 namespace WebSupplier.Domain.Models
 {
-    public class Supplier
+    public abstract class Supplier : Entity
     {
-        public Guid Id { get; private set; }
+        public bool Active { get; private set; }
+        public string FantasyName { get; protected set; }
 
-        public bool Active { get; set; }
-
-        [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = false)]
-        public DateTime InsertDate { get; private set; }
-
-        [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = false)]
-        public DateTime? UpdateDate { get; private set; }
+        public Address Address { get; private set; }
+        public Email Email { get; private set; }
 
 
-        public Supplier()
+        private List<Phone> _phones = new List<Phone>();
+        public IReadOnlyCollection<Phone> Phones => _phones;
+
+        private List<Product> _products = new List<Product>();
+        public IReadOnlyCollection<Product> Products => _products;
+
+        protected Supplier() { }
+        protected Supplier(bool active, string fantasyName, string zipCode, string street, string number, string neighborhood, string city, string state,
+                        string complement, string reference, string emailAddress, string ddd, string celCelular)
         {
-            Id = Guid.NewGuid();                        
+            Active = active;
+            FantasyName = fantasyName;
+            AddAddress(new Address(Id, zipCode, street, number, neighborhood, city, state, complement, reference));
+            AddEmail(new Email(Id, emailAddress));
+            AddPhone(new Phone(Id, ddd, celCelular, PhoneType.Celular));
         }
 
-
-        public override string ToString()
+        public virtual void SetFantasyName(string value)
         {
-            return $"{GetType().Name} [Id={Id}]";
+            DomainValidation.ValidateIsNullOrEmpty(value, "The Fantasy Name is mandatory.");
+            FantasyName = value;
         }
 
-
-        public void Enable()
+        public virtual void AddPhone(Phone phone)
         {
-            Active = true;
+            DomainValidation.ValidateIfTrue(_phones.Count >= 3, "Maximum: 3 phones");
+
+            _phones.Add(phone);
+        }
+        public virtual void UpdatePhone(string ddd, string phone, PhoneType phoneType)
+        {
+            DomainValidation.ValidateIfTrue(PhoneExist(phoneType), $"The type {phoneType} not exists for update.");
+
+            var phoneExist = _phones.Where(x => x.PhoneType == phoneType).FirstOrDefault();
+            phoneExist.SetPhone(ddd, phone, phoneType);
+
+        }
+        public virtual void RemovePhone(PhoneType phoneType)
+        {
+            DomainValidation.ValidateIfTrue(PhoneExist(phoneType), $"The type {phoneType} not exists for remove.");
+
+            var phoneExist = _phones.Where(x => x.PhoneType == phoneType).FirstOrDefault();
+            _phones.Remove(phoneExist);
+
+        }
+        public bool PhoneExist(PhoneType phoneType)
+        {
+            return _phones.Where(x => x.PhoneType == phoneType).FirstOrDefault() == null;
         }
 
-        public void Disable()
+        public virtual void UpdateAddress(string zipCode, string street, string number, string neighborhood, string city, string state,
+                        string complement = null, string reference = null)
         {
-            Active = false;
+            Address.SetAddress(zipCode, street, number, neighborhood, city, state,
+                         complement, reference);
+        }
+        private void AddAddress(Address address)
+        {
+            DomainValidation.ValidateIfTrue(address == null, "The Address is mandatory.");
+            Address = address;
         }
 
-
-        //public virtual bool IsValid()
-        //{
-        //    throw new NotImplementedException();
-        //}
+        public virtual void UpdateEmail(string email)
+        {
+            Email.SetEmail(email);
+        }
+        private void AddEmail(Email email)
+        {
+            DomainValidation.ValidateIfTrue(email == null, "The Email is mandatory.");
+            Email = email;
+        }
 
 
     }

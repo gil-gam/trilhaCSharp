@@ -1,9 +1,6 @@
 ﻿using FluentValidation;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
 using WebSupplier.Domain.Interfaces;
 using WebSupplier.Domain.Tools;
 
@@ -40,7 +37,7 @@ namespace WebSupplier.Domain.Models
 
         public void SetCpf(string value)
         {
-            if (value.IsCpf()) throw new DomainException("The CPF is mandatory!");
+            if (!value.IsCpf()) throw new DomainException("The CPF is mandatory!");
             Cpf = value;
         }
 

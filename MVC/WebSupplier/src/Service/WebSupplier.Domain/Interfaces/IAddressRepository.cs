@@ -2,8 +2,10 @@
 
 namespace WebSupplier.Domain.Interfaces
 {
-    public interface ISupplierJuridicalRepository : IRepository<SupplierJuridical>
+    public interface IAddressRepository : IRepositoryBase<Address>
     {
 
     }
+
+
 }
