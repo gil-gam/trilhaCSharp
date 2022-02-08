@@ -1,0 +1,41 @@
+﻿@model PaginationViewModel<SupplierViewModel>
+
+@{
+    ViewData["Title"] = "Suppliers";
+}
+
+<a asp-action="New" class="btn btn-primary">Add Supplier</a>
+<a asp-action="Report" class="btn btn-primary">Report</a>
+
+<br />
+<vc:summary></vc:summary>
+<br />
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Fantasy Name</th>
+            <th scope="col">CompanyName/Name</th>
+            <th scope="col">Cnpj/Cpf</th>
+            <th scope="col">Registration</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model.List)
+        {
+            <tr>
+                <th>@item.FantasyName</th>
+                <td>@item.GetFullNameOrCompanyName()</td>
+                <td>@item.GetCnpjOrCpf()</td>                
+                <td>@item.InsertDate</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-secondary">Edit</a>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-warning">Details</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

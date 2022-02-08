@@ -42,11 +42,6 @@ namespace WebSupplier.Domain.Models
         public void SetOpenDate(DateTime value)
         {
             DomainValidation.ValidateIfTrue(value.Date == DateTime.Now.Date, "Opening date cannot be equal to today");
-
-
-
-
-");
             OpenDate = value;
         }
     }

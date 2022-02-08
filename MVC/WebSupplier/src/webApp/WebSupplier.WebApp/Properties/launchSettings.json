@@ -3,8 +3,8 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:43082",
-      "sslPort": 44364
+      "applicationUrl": "http://localhost:53443",
+      "sslPort": 44380
     }
   },
   "profiles": {
@@ -24,7 +24,7 @@
         "ASPNETCORE_HOSTINGSTARTUPASSEMBLIES": "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation"
       }
     },
-    "Linux - Dev": {
+    "Linix - Dev": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {
@@ -33,7 +33,7 @@
       },
       "applicationUrl": "https://localhost:5001;http://localhost:5000"
     },
-    "Linux - Prod": {
+    "Linix - Prod": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {
@@ -41,6 +41,17 @@
         "ASPNETCORE_HOSTINGSTARTUPASSEMBLIES": "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation"
       },
       "applicationUrl": "https://localhost:5001;http://localhost:5000"
+    },
+    "WSL": {
+      "commandName": "WSL2",
+      "launchBrowser": true,
+      "launchUrl": "https://localhost:5001",
+      "environmentVariables": {
+        "ASPNETCORE_URLS": "https://localhost:5001;http://localhost:5000",
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_HOSTINGSTARTUPASSEMBLIES": "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation"
+      },
+      "distributionName": ""
     }
   }
 }

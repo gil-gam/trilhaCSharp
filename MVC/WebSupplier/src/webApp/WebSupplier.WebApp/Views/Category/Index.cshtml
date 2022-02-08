@@ -1,0 +1,37 @@
+﻿@model PaginationViewModel<CategoryViewModel>
+
+@{
+    ViewData["Title"] = "Categories";
+}
+
+<a asp-action="New" class="btn btn-primary">Add Category</a>
+
+<br />
+<br />
+<vc:summary></vc:summary>
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Cadastro</th>
+            <th scope="col">Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model.List)
+        {
+            <tr>
+                <th>@item.Name</th>
+                <td>@item.InsertDate</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-secondary">Edit</a>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-warning">Details</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

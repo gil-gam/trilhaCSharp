@@ -1,0 +1,32 @@
+﻿@model NewCategoryViewModel
+@{
+    ViewData["Title"] = "New Category";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<br />
+<vc:summary></vc:summary>
+<br />
+
+<form asp-action="New" method="post">
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" type="text" class="form-control" placeholder="Category Name">
+            <span asp-validation-for="Name" class="alert-danger"></span>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-success">Register</button>
+    <a asp-action="Index" class="btn btn-primary">Back to the list</a>
+</form>
+
+
+@section Scripts {
+
+            @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+
+}
+

@@ -1,40 +1,31 @@
 ﻿using FluentValidation;
 using System;
 using System.ComponentModel.DataAnnotations;
+using WebSupplier.Domain.Tools;
 
 namespace WebSupplier.Domain.Models
 {
-    public class Email
+    public class Email : Entity
     {
-        public Guid Id { get; set; }
-        public string EmailAddress { get; set; }
+    public Guid SupplierId { get; private set; }
 
-        [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = false)]
-        public DateTime InsertDate { get; set; }
+    public string EmailAddress { get; private set; }
 
-        [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = false)]
-        public DateTime UpdateDate { get; set; }
+    public Supplier Supplier { get; private set; }
 
+    protected Email() { }
 
-
-        public void SetEmailAddress(string value)
-        {
-            EmailAddress = value;
-        }
-
-        public class EmailValidator : AbstractValidator<Email>
-        {
-            public EmailValidator()
-            {
-                RuleFor(x => x.EmailAddress)
-                .NotEmpty()
-                .WithMessage("The Email is mandatory")
-                .EmailAddress()
-                .WithMessage("Invalid Email");
-            }
-        }
-
+    public Email(Guid supplierId, string emailAddress)
+    {
+        SupplierId = supplierId;
+        SetEmail(emailAddress);
     }
+
+    public void SetEmail(string value)
+    {
+        DomainValidation.ValidateIsNullOrEmpty(value, "The Email is mandatory.");
+        EmailAddress = value;
+    }
+
+}
 }

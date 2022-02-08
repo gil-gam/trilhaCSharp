@@ -1,0 +1,73 @@
+﻿@model SupplierViewModel
+@{
+    ViewData["Title"] = "Delete Supplier: " + @Model.FantasyName;
+}
+
+<h1>@ViewData["Title"]</h1>
+<vc:summary></vc:summary>
+<table>
+    <tr>
+        <td>Person : </td>
+        <td><label>@Model.PersonType</label></td>
+    </tr>
+    <tr>
+        <td>Fantasy Name : </td>
+        <td><label>@Model.FantasyName</label></td>
+    </tr>
+
+    @if (Model.PersonType == SupplierViewModel.Physical)
+    {
+        <tr>
+            <td>Name : </td>
+            <td><label>@Model.FullName</label></td>
+        </tr>
+        <tr>
+            <td>Cpf : </td>
+            <td><label>@Model.Cpf</label></td>
+        </tr>
+        <tr>
+            <td>Birthdate : </td>
+            <td><label>@Model.BirthDate</label></td>
+        </tr>
+    }
+    else
+    {
+        <tr>
+            <td>Company Name : </td>
+            <td><label>@Model.CompanyName</label></td>
+        </tr>
+        <tr>
+            <td>Cnpj : </td>
+            <td><label>@Model.Cnpj</label></td>
+        </tr>
+        <tr>
+            <td>Open date : </td>
+            <td><label>@Model.OpenDate</label></td>
+        </tr>
+    }
+
+
+    <tr>
+        <td>Cellphone : </td>
+        <td><label>@Model.TelCelular</label></td>
+    </tr>
+    <tr>
+        <td>Phone : </td>
+        <td><label>@Model.TelHome</label></td>
+    </tr>
+    <tr>
+        <td>Comercial phone : </td>
+        <td><label>@Model.TelComercial</label></td>
+    </tr>
+    <tr>
+        <td>Address : </td>
+        <td><label>@Model.Address?.ToString()</label></td>
+    </tr>
+</table>
+<form asp-action="ConfirmDelete" method="post">
+
+    <input type="hidden" asp-for="Id" />
+
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a asp-action="Index" class="btn btn-primary">Back to the list</a>
+</form>

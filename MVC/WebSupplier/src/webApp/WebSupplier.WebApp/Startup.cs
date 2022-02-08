@@ -1,31 +1,18 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using WebSupplier.Domain.Interfaces;
 using WebSupplier.Domain.Services;
-using WebSupplier.Infrastructure.Data;
-using WebSupplier.Infrastructure.Repository;
+using WebSupplier.WebApp.Configuration;
+using WebSupplier.WebApp.Extensions.Background;
 
 namespace WebSupplier.WebApp
 {
     public class Startup
     {
-
         public IConfiguration Configuration { get; }
-
-        //public Startup(IConfiguration configuration)
-        //{
-        //    Configuration = configuration;
-        //}
-
         public Startup(IHostEnvironment hostEnvironment)
         {
             var builder = new ConfigurationBuilder()
@@ -36,20 +23,20 @@ namespace WebSupplier.WebApp
 
             Configuration = builder.Build();
         }
-                   
+
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllersWithViews();
+            services.AddAutoMapper(typeof(Startup));
 
-            services.AddDbContext<WebSupplierContext>(x => x.UseSqlServer(Configuration.GetConnectionString("MyConnectionString")));
+            services.WebAppServiceConfig();
 
-            services.AddScoped<ISupplierPhysicalRepository, SupplierPhysicalRepository>();
-            services.AddScoped<ISupplierPhysicalService, SupplierPhysicalService>();
-            services.AddScoped<WebSupplierContext>(); 
+            services.IdentityMyConfig();
+            services.DbContextConfig(Configuration);
+            services.InjectionConfig();
 
-
+            services.AddScoped<INotificationService, NotificationService>();
+            services.AddHostedService<Background>();
         }
-
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
@@ -60,15 +47,18 @@ namespace WebSupplier.WebApp
             else
             {
                 app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            app.WebAppConfig(env);
+            app.UseHttpsRedirection();
+            app.UseStaticFiles();
             app.UseRouting();
-
+            app.UseCors();
             app.UseAuthorization();
+            app.UseAuthentication();
 
             app.UseEndpoints(endpoints =>
             {
@@ -76,6 +66,8 @@ namespace WebSupplier.WebApp
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+
         }
+
     }
 }

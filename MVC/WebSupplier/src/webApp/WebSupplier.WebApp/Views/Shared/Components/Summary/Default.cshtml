@@ -1,0 +1,30 @@
+﻿@model List<string>
+@if (Model.Count > 0)
+{
+    <div class="alert alert-danger" role="alert">
+
+        @foreach (var item in ViewData.Model)
+        {
+            @Html.Raw(item) <br />
+        }
+    </div>
+}
+
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger" role="alert">
+
+        @Html.Raw(TempData["Error"])
+    </div>
+}
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success" role="alert">
+
+        @Html.Raw(TempData["Success"])
+    </div>
+}
+
+
+

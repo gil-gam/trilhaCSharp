@@ -1,0 +1,36 @@
+﻿@model PaginationViewModel<ProductViewModel>
+
+@{
+    ViewData["Title"] = "Products";
+}
+
+<a asp-action="New" class="btn btn-primary">Add Product</a>
+
+<br />
+<vc:summary></vc:summary>
+<br />
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Register</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model.List)
+        {
+            <tr>
+                <th>@item.Name</th>
+                <td>@item.InsertDate</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-secondary">Edit</a>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-warning">Details</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

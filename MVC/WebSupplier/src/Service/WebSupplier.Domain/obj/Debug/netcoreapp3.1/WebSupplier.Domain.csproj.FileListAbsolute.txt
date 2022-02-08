@@ -8,3 +8,6 @@ C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\Web
 C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\WebSupplier\src\Service\WebSupplier.Domain\obj\Debug\netcoreapp3.1\WebSupplier.Domain.csproj.CoreCompileInputs.cache
 C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\WebSupplier\src\Service\WebSupplier.Domain\obj\Debug\netcoreapp3.1\WebSupplier.Domain.dll
 C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\WebSupplier\src\Service\WebSupplier.Domain\obj\Debug\netcoreapp3.1\WebSupplier.Domain.pdb
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\WebSupplier\src\Service\WebSupplier.Domain\bin\Debug\netcoreapp3.1\WebSupplier.Domain.runtimeconfig.json
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\WebSupplier\src\Service\WebSupplier.Domain\bin\Debug\netcoreapp3.1\WebSupplier.Domain.runtimeconfig.dev.json
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\WebSupplier\src\Service\WebSupplier.Domain\obj\Debug\netcoreapp3.1\WebSupplier.Domain.genruntimeconfig.cache

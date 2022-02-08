@@ -11,34 +11,38 @@ namespace WebSupplier.Infrastructure.Data
 {
     public class WebSupplierContext : DbContext
     {
-        public WebSupplierContext(DbContextOptions<WebSupplierContext> options) : base(options) 
-        {
+        public WebSupplierContext(DbContextOptions<WebSupplierContext> options) : base(options) { }
 
-        }
-
+        public DbSet<Supplier> Supplier { get; set; }
+        public DbSet<SupplierJuridical> SupplierJuridical { get; set; }
         public DbSet<SupplierPhysical> SupplierPhysical { get; set; }
+        public DbSet<Address> Address { get; set; }
+        public DbSet<Phone> Phone { get; set; }
+        public DbSet<Email> Email { get; set; }
+        public DbSet<Category> Category { get; set; }
+        public DbSet<Product> Product { get; set; }
+        public DbSet<Image> Image { get; set; }
 
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
         {
-            foreach (var entity in ChangeTracker.Entries().Where(entity => entity.Entity.GetType().GetProperty("InsertDate") != null ||
-                                                                           entity.Entity.GetType().GetProperty("UpDate") != null)) 
+            foreach (var entry in ChangeTracker.Entries().Where(entry => entry.Entity.GetType().GetProperty("InsertDate") != null &&
+                                                                         entry.Entity.GetType().GetProperty("UpdateDate") != null))
             {
-                if (entity.State == EntityState.Added)
+                if (entry.State == EntityState.Added)
                 {
-                    entity.Property("InsertDate").CurrentValue = DateTime.Now;
-                    entity.Property("UpDate").IsModified = false;
+                    entry.Property("InsertDate").CurrentValue = DateTime.Now;
+                    entry.Property("UpdateDate").IsModified = false;
                 }
 
-                if (entity.State == EntityState.Modified)
+                if (entry.State == EntityState.Modified)
                 {
-                    entity.Property("InsertDate").IsModified = false;
-                    entity.Property("UpDate").CurrentValue = DateTime.Now;
+                    entry.Property("UpdateDate").CurrentValue = DateTime.Now;
+                    entry.Property("InsertDate").IsModified = false;
                 }
             }
 
             return base.SaveChangesAsync(cancellationToken);
         }
-
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -50,6 +54,7 @@ namespace WebSupplier.Infrastructure.Data
 
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(WebSupplierContext).Assembly);
 
+            base.OnModelCreating(modelBuilder);
         }
     }
 }

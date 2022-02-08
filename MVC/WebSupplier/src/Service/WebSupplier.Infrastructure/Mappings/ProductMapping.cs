@@ -7,38 +7,31 @@ using WebSupplier.Domain.Models;
 
 namespace WebSupplier.Infrastructure.Mappings
 {
-    class ProductMapping : IEntityTypeConfiguration<Product>
+    public class ProductMapping : IEntityTypeConfiguration<Product>
     {
         public void Configure(EntityTypeBuilder<Product> builder)
         {
-                        
-            builder.Property(x => x.Id)
-                .IsRequired();
+            builder.HasKey(x => x.Id);
 
-            builder.Property(x => x.InsertDate)
-             .IsRequired();
-
-            builder.Property(x => x.UpdateTime)
-             .IsRequired();
+            builder.HasMany(x => x.Images)
+               .WithOne(x => x.Product)
+               .HasForeignKey(x => x.ProductId);
 
             builder.Property(x => x.Name)
-            .IsRequired()
-            .HasColumnType("varchar(300)");
+               .IsRequired();
 
-            builder.Property(x => x.Barcode)
-                .IsRequired();
+            builder.Property(x => x.BarCode)
+               .IsRequired()
+               .HasColumnType("varchar(14)");
 
             builder.Property(x => x.QuantityStock)
-                .IsRequired();
-
-            builder.Property(x => x.Active)
-                .IsRequired();
+               .IsRequired();
 
             builder.Property(x => x.PriceSales)
-                .IsRequired();
+               .IsRequired();
 
             builder.Property(x => x.PricePurchase)
-                .IsRequired();
+               .IsRequired();
 
             builder.ToTable("TB_Product");
         }

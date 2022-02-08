@@ -3,23 +3,29 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
+using WebSupplier.Domain.Tools;
 
 namespace WebSupplier.Domain.Models
 {
-    public class Category
+    public class Category : Entity
     {
-        public Guid Id { get; set; }
-        public bool Active { get; set; }
-        public string Name { get; set; }
+        public string Name { get; private set; }
 
-        [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = false)]
-        public DateTime InsertDate { get; set; }
+        private List<Product> _products = new List<Product>();
+        public IReadOnlyCollection<Product> Products => _products;
 
-        [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = false)]
-        public DateTime UpdateDate { get; set; }
-        
-       
+        protected Category() { }
+
+        public Category(string name)
+        {
+            SetName(name);
+        }
+
+        public void SetName(string value)
+        {
+            DomainValidation.ValidateIsNullOrEmpty(value, "The Name is mandatory.");
+            Name = value;
+        }
+
     }
 }
