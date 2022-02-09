@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WebSupplier.Domain.Interfaces;
 using System.Linq;
+using WebSupplier.WebApp.Models;
 
 namespace WebSupplier.WebApp.Extensions.ViewComponents
 {
@@ -15,9 +16,18 @@ namespace WebSupplier.WebApp.Extensions.ViewComponents
 
         public IViewComponentResult Invoke()
         {
-            var result = _notificationService.AllError().Select(x => x.Erro).ToList();
-            result.ForEach(x => ModelState.AddModelError(string.Empty, x));
-            return View(result);
+            var list = _notificationService.AllError().Select(x => x.Erro).ToList();
+            list.ForEach(x => ViewData.ModelState.AddModelError(string.Empty, x + " <br />"));
+            return View(list);
         }
+    }
+
+    public class PaginationViewComponent : ViewComponent
+    {
+        public IViewComponentResult Invoke(IPageViewModel modelPagination)
+        {
+            return View(modelPagination);
+        }
+
     }
 }

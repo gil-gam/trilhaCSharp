@@ -35,6 +35,9 @@ namespace WebSupplier.WebApp.Controllers
         {
             var result = await _supplierService.Pagination(pageIndex, pageSize, query);
 
+            TempData["Size"] = pageSize;
+            TempData["Query"] = query;
+
             ICollection<SupplierViewModel> listViewModel = new List<SupplierViewModel>();
             foreach (var item in result.List)
             {

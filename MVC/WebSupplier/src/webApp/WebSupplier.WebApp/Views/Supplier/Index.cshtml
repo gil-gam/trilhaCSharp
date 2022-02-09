@@ -5,11 +5,33 @@
 }
 
 <a asp-action="New" class="btn btn-primary">Add Supplier</a>
-<a asp-action="Report" class="btn btn-primary">Report</a>
+<vc:summary></vc:summary>
 
 <br />
-<vc:summary></vc:summary>
 <br />
+
+<form asp-action="Index" asp-controller="SupplierController" method="get">
+    <div class="form-row">
+        <div class="form-group col-md-2">
+            <select name="pageSize" id="pageSize" value="@TempData["Size"]" class="form-control">
+                <option value="10">10</option>
+                <option value="50">50</option>
+                <option value="@int.MaxValue">All</option>
+            </select>
+        </div>
+        <div class="form-group col-md-4"></div>
+
+        <div class="form-group col-md-5">
+            <input type="text" class="form-control" name="query" id="query" value="@TempData["Query"]" placeholder="Search for Name, Cpf, E-mail" />
+        </div>
+        <div class="form-group col-md-1">
+            <a asp-action="Report" class="btn btn-primary">Report</a>
+        </div>
+    </div>
+
+</form>
+
+
 
 <table class="table">
     <thead class="thead-dark">
@@ -39,3 +61,5 @@
         }
     </tbody>
 </table>
+
+<vc:pagination model-pagination="@Model"></vc:pagination>
