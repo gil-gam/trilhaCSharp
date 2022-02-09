@@ -10,8 +10,8 @@ using WebSupplier.Infrastructure.Data;
 namespace WebSupplier.Infrastructure.Migrations
 {
     [DbContext(typeof(WebSupplierContext))]
-    [Migration("20220203100959_Initial")]
-    partial class Initial
+    [Migration("20220209052946_Two")]
+    partial class Two
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

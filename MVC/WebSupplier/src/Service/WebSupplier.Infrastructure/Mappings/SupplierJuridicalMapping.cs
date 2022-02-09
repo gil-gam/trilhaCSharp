@@ -7,11 +7,9 @@ namespace WebSupplier.Infrastructure.Mappings
     public class SupplierJuridicalMapping : IEntityTypeConfiguration<SupplierJuridical>
     {
         public void Configure(EntityTypeBuilder<SupplierJuridical> builder)
-        {            
-           
-
+        {                       
             builder.Property(x => x.Cnpj)                
-                .HasColumnType("varchar(14)");
+            .HasColumnType("varchar(14)");
         }
     }
 }

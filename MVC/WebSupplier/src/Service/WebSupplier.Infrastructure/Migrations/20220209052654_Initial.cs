@@ -1,5 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
-using System;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace WebSupplier.Infrastructure.Migrations
 {
@@ -123,13 +123,13 @@ namespace WebSupplier.Infrastructure.Migrations
                     InsertDate = table.Column<DateTime>(nullable: false),
                     UpdateDate = table.Column<DateTime>(nullable: true),
                     CategoryId = table.Column<Guid>(nullable: false),
+                    SupplierId = table.Column<Guid>(nullable: false),
                     Name = table.Column<string>(type: "varchar(256)", nullable: false),
                     BarCode = table.Column<string>(type: "varchar(14)", nullable: false),
                     QuantityStock = table.Column<int>(nullable: false),
                     Active = table.Column<bool>(nullable: false),
                     PriceSales = table.Column<decimal>(nullable: false),
-                    PricePurchase = table.Column<decimal>(nullable: false),
-                    SupplierId = table.Column<Guid>(nullable: true)
+                    PricePurchase = table.Column<decimal>(nullable: false)
                 },
                 constraints: table =>
                 {

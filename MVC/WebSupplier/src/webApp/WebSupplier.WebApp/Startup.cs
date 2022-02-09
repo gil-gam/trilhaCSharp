@@ -1,10 +1,15 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using WebSupplier.Domain.Interfaces;
+using WebSupplier.Domain.Interfaces.Repositorys;
+using WebSupplier.Domain.Interfaces.Services;
 using WebSupplier.Domain.Services;
+using WebSupplier.Infrastructure.Data;
+using WebSupplier.Infrastructure.Repository;
 using WebSupplier.WebApp.Configuration;
 using WebSupplier.WebApp.Extensions.Background;
 
@@ -26,6 +31,15 @@ namespace WebSupplier.WebApp
 
         public void ConfigureServices(IServiceCollection services)
         {
+
+            services.AddControllersWithViews();
+
+            services.AddDbContext<WebSupplierContext>(x => x.UseSqlServer(Configuration.GetConnectionString("MyConnectionString")));
+
+            services.AddScoped<ISupplierRepository, SupplierRepository>();
+            services.AddScoped<ISupplierService, SupplierService>();
+            services.AddScoped<WebSupplierContext>();
+
             services.AddAutoMapper(typeof(Startup));
 
             services.WebAppServiceConfig();
