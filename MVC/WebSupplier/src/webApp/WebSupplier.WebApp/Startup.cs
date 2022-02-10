@@ -32,28 +32,17 @@ namespace WebSupplier.WebApp
         }
 
         public void ConfigureServices(IServiceCollection services)
-        {        
-            services.AddDbContext<WebSupplierContext>(x => x.UseSqlServer(Configuration.GetConnectionString("MyConnectionString")));
-            services.AddControllersWithViews();
-
-            services.AddScoped<ISupplierRepository, SupplierRepository>();
-            services.AddScoped<ISupplierService, SupplierService>();
-            services.AddScoped<WebSupplierContext>();
-
-            services.AddAutoMapper(typeof(Startup));
-
+        {          
             services.WebAppServiceConfig();
-
-            services.IdentityMyConfig();
-            //services.AddIdentity<IdentityUser, IdentityRole>()
-            //            .AddEntityFrameworkStores<ApplicationDbContext>();
-
             services.DbContextConfig(Configuration);
             services.InjectionConfig();
 
-            services.AddScoped<INotificationService, NotificationService>();
+            services.IdentityMyConfig();           
+
             services.AddHostedService<Background>();
-        }
+
+                    }
+    }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
@@ -77,6 +66,7 @@ namespace WebSupplier.WebApp
             app.UseAuthentication();
             app.UseAuthorization();
 
+           
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(

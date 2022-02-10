@@ -2,13 +2,15 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.AspNetCore.Routing;
+using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 
 namespace WebSupplier.WebApp.Extensions
 {
     public class CustomAuthorization
-    {
+    {        
+
         public static bool ValidarClaimsUsuario(HttpContext context, string claimName, string claimValue)
         {
             return context.User.Identity.IsAuthenticated &&
@@ -16,6 +18,7 @@ namespace WebSupplier.WebApp.Extensions
         }
 
     }
+
 
     public class ClaimsAuthorizeAttribute : TypeFilterAttribute
     {

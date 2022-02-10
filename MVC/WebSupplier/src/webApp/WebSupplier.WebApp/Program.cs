@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using WebSupplier.WebApp;
-using WebSupplier;
+using WebSupplier.WebApp.Data;
 
 
 namespace WebSupplier.WebApp
