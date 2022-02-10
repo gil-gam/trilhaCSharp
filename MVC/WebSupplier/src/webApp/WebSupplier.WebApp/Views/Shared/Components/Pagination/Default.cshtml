@@ -1,6 +1,6 @@
 ﻿@model IPageViewModel
 
-^@{ 
+@{ 
     var prevDisable = Model.PageIndex == 1 ? "disabled" : "";
     var nextDisable = Model.PageIndex == (int)Model.TotalPages ? "disabled" : "";
 }

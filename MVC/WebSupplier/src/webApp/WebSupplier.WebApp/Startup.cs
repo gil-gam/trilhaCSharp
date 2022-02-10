@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -11,6 +12,7 @@ using WebSupplier.Domain.Services;
 using WebSupplier.Infrastructure.Data;
 using WebSupplier.Infrastructure.Repository;
 using WebSupplier.WebApp.Configuration;
+using WebSupplier.WebApp.Data;
 using WebSupplier.WebApp.Extensions.Background;
 
 namespace WebSupplier.WebApp
@@ -30,11 +32,9 @@ namespace WebSupplier.WebApp
         }
 
         public void ConfigureServices(IServiceCollection services)
-        {
-
-            services.AddControllersWithViews();
-
+        {        
             services.AddDbContext<WebSupplierContext>(x => x.UseSqlServer(Configuration.GetConnectionString("MyConnectionString")));
+            services.AddControllersWithViews();
 
             services.AddScoped<ISupplierRepository, SupplierRepository>();
             services.AddScoped<ISupplierService, SupplierService>();
@@ -45,6 +45,9 @@ namespace WebSupplier.WebApp
             services.WebAppServiceConfig();
 
             services.IdentityMyConfig();
+            //services.AddIdentity<IdentityUser, IdentityRole>()
+            //            .AddEntityFrameworkStores<ApplicationDbContext>();
+
             services.DbContextConfig(Configuration);
             services.InjectionConfig();
 
@@ -69,10 +72,10 @@ namespace WebSupplier.WebApp
             app.WebAppConfig(env);
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-            app.UseRouting();
             app.UseCors();
-            app.UseAuthorization();
+            app.UseRouting();
             app.UseAuthentication();
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
