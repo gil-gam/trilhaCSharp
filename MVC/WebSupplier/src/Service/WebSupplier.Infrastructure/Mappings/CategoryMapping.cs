@@ -14,8 +14,7 @@ namespace WebSupplier.Infrastructure.Mappings
                .WithOne(x => x.Category)
                .HasForeignKey(x => x.CategoryId);
 
-            builder.Property(x => x.Name)
-               .IsRequired();
+            builder.Property(x => x.Name);
 
             builder.ToTable("TB_Category");
         }

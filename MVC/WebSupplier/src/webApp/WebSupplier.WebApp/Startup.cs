@@ -41,7 +41,6 @@ namespace WebSupplier.WebApp
 
             services.AddHostedService<Background>();
 
-
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

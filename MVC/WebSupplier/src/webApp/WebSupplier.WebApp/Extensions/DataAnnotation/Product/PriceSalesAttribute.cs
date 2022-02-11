@@ -18,7 +18,7 @@ namespace WebSupplier.WebApp.Extensions.DataAnnotation.Product
                 {
                     var model = (EditProductViewModel)validationContext.ObjectInstance;
 
-                    if(decimal.Parse(value.ToString()) <= model.PricePurchase) return new ValidationResult("Preço de venda não pode ser menor ou igual a o preço de compra");
+                    if(decimal.Parse(value.ToString()) <= model.PricePurchase) return new ValidationResult("Selling price may not be less than or equal to the buying-in price.");
                 }
             }
 

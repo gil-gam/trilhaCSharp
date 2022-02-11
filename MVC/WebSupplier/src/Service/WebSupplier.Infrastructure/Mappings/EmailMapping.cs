@@ -10,8 +10,7 @@ namespace WebSupplier.Infrastructure.Mappings
         {
             builder.HasKey(x => x.Id);
 
-            builder.Property(x => x.EmailAddress)
-               .IsRequired();
+            builder.Property(x => x.EmailAddress);
 
             builder.ToTable("TB_Email");
         }

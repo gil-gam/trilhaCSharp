@@ -10,7 +10,7 @@ namespace WebSupplier.WebApp.Controllers
     public class HomeController : MainController
     {
         public HomeController(INotificationService notificationService, IMapper mapper) : base(notificationService, mapper)
-        {
+        {            
         }
 
         [AllowAnonymous]
@@ -25,7 +25,7 @@ namespace WebSupplier.WebApp.Controllers
             return View();
         }
 
-        [HttpGet("erro/{id:length(3,3)}")]
+        [HttpGet("error/{id:length(3,3)}")]
         [AllowAnonymous]
         public IActionResult Error(int id)
         {

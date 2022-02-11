@@ -97,13 +97,13 @@ namespace WebSupplier.Infrastructure.Migrations
                 name: "TB_Phone",
                 columns: table => new
                 {
-                    Id = table.Column<Guid>(nullable: false),
-                    InsertDate = table.Column<DateTime>(nullable: false),
+                    Id = table.Column<Guid>(nullable: true),
+                    InsertDate = table.Column<DateTime>(nullable: true),
                     UpdateDate = table.Column<DateTime>(nullable: true),
-                    SupplierId = table.Column<Guid>(nullable: false),
-                    Ddd = table.Column<string>(type: "char(2)", nullable: false),
-                    Number = table.Column<string>(type: "varchar(9)", nullable: false),
-                    PhoneType = table.Column<int>(nullable: false)
+                    SupplierId = table.Column<Guid>(nullable: true),
+                    Ddd = table.Column<string>(type: "char(2)", nullable: true),
+                    Number = table.Column<string>(type: "varchar(9)", nullable: true),
+                    PhoneType = table.Column<int>(nullable: true)
                 },
                 constraints: table =>
                 {

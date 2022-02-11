@@ -25,6 +25,7 @@ namespace WebSupplier.Domain.Models
 
         public override void SetFantasyName(string value)
         {
+            DomainValidation.ValidateIsNullOrEmpty(value, "The Fantasy Name is mandatory.");
             base.SetFantasyName(value);
         }
 

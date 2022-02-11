@@ -10,8 +10,7 @@ namespace WebSupplier.Infrastructure.Mappings
         {
             builder.HasKey(x => x.Id);
 
-            builder.Property(x => x.ImagePath)
-              .IsRequired();
+            builder.Property(x => x.ImagePath);
 
             builder.ToTable("TB_Image");
         }

@@ -11,11 +11,9 @@ namespace WebSupplier.Infrastructure.Mappings
             builder.HasKey(x => x.Id);
 
             builder.Property(x => x.Ddd)
-                .IsRequired()
             .HasColumnType("char(2)");
 
             builder.Property(x => x.Number)
-                .IsRequired()
             .HasColumnType("varchar(9)");
 
             builder.ToTable("TB_Phone");

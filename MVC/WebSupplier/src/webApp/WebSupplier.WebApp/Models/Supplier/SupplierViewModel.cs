@@ -1,5 +1,4 @@
-﻿using WebSupplier.Domain.Models.enums;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -38,34 +37,11 @@ namespace WebSupplier.WebApp.Models.Supplier
         {
             return string.IsNullOrEmpty(Cnpj) ? Cpf : Cnpj;
         }
-
-        public void SetPhones()
-        {
-            SetCelular();
-            SetHome();
-            SetComercial();
-        }
-
+                
         public string PersonType { get; set; }
 
-        public string TelCelular { get; set; }        
-        public string TelHome { get; set; }        
-        public string TelComercial { get; set; }
-
-        private void SetCelular()
-        {
-            TelCelular = Phones.Where(x => x.PhoneType == PhoneType.Celular).FirstOrDefault() == null ? string.Empty : Phones.Where(x => x.PhoneType == PhoneType.Celular).First().ToString();
-        }
-
-        private void SetHome()
-        {
-            TelHome = Phones.Where(x => x.PhoneType == PhoneType.Fixo).FirstOrDefault() == null ? string.Empty : Phones.Where(x => x.PhoneType == PhoneType.Fixo).First().ToString();
-        }
-
-        private void SetComercial()
-        {
-            TelComercial = Phones.Where(x => x.PhoneType == PhoneType.Comercial).FirstOrDefault() == null ? string.Empty : Phones.Where(x => x.PhoneType == PhoneType.Comercial).First().ToString();
-        }
+        public string Telephone { get; set; }        
+                 
 
         public void SetTypePerson()
         {

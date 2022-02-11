@@ -3,10 +3,7 @@
 @{
     ViewData["Title"] = "Suppliers";
 }
-
-<a asp-action="New" class="btn btn-primary">Add Supplier</a>
-<vc:summary></vc:summary>
-
+<h1>@ViewData["Title"]</h1>
 <br />
 <br />
 
@@ -25,11 +22,24 @@
             <input type="text" class="form-control" name="query" id="query" value="@TempData["Query"]" placeholder="Search for Name, Cpf, E-mail" />
         </div>
         <div class="form-group col-md-1">
-            <button type="submit" class="btn-primary">Search</button>
-            <br />
-            <br />
-            <a asp-action="Report" class="btn btn-primary">Report</a>
+            <button type="submit" class="btn-primary">Search</button>            
         </div>
+
+        @if (User.Identity.Name.Contains("@admin.com"))
+        {
+            <div class="form-group col-md-1">
+                <a asp-action="New" class="btn btn-primary">Add Supplier</a>
+                <br />
+                <br />
+                <a asp-action="Report" class="btn btn-primary">Report</a>
+                <br />
+                <br />
+            </div>
+        }
+        else
+        if (User.Identity.Name==null)
+            return;
+
     </div>
 
 </form>

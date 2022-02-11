@@ -15,7 +15,7 @@ using System.Threading.Tasks;
 
 namespace WebSupplier.WebApp.Controllers
 {
-    [Route("produtos")]
+    [Route("products")]
     public class ProductController : MainController
     {
         private readonly IProductService _productService;
@@ -37,7 +37,7 @@ namespace WebSupplier.WebApp.Controllers
         }
 
         [AllowAnonymous]
-        [HttpGet("todos-os-produtos")]
+        [HttpGet("all-products")]
         public async Task<IActionResult> Index(int pageSize = 10, int pageIndex = 1, string query = null)
         {
             var result = await _productService.Pagination(pageIndex, pageSize, query);
@@ -49,7 +49,7 @@ namespace WebSupplier.WebApp.Controllers
         }
 
         [ClaimsAuthorizeAttribute("Product", "New")]
-        [HttpGet("novo-produto")]
+        [HttpGet("new-product")]
         public async Task<IActionResult> New()
         {
 
@@ -57,7 +57,7 @@ namespace WebSupplier.WebApp.Controllers
         }
 
         [ClaimsAuthorizeAttribute("Product", "New")]
-        [HttpPost("novo-produto")]
+        [HttpPost("new-product")]
         public async Task<IActionResult> New(NewProductViewModel viewModel)
         {
             if (viewModel.Images.Count == 0)
@@ -74,7 +74,7 @@ namespace WebSupplier.WebApp.Controllers
         }
 
         [AllowAnonymous]
-        [HttpGet("novo-produto/{id:guid}")]
+        [HttpGet("new-product/{id:guid}")]
         public async Task<IActionResult> Details(Guid id)
         {
             if (id == Guid.Empty) return BadRequest();
@@ -91,7 +91,7 @@ namespace WebSupplier.WebApp.Controllers
         }
 
         [ClaimsAuthorizeAttribute("Product", "Edit")]
-        [HttpGet("editar-produto/{id:guid}")]
+        [HttpGet("edit-product/{id:guid}")]
         public async Task<IActionResult> Edit(Guid id)
         {
             if (id == Guid.Empty) return BadRequest();
@@ -108,7 +108,7 @@ namespace WebSupplier.WebApp.Controllers
         }
 
         [ClaimsAuthorizeAttribute("Product", "Edit")]
-        [HttpPost("editar-produto/{id:guid}")]
+        [HttpPost("edit-product/{id:guid}")]
         public async Task<IActionResult> Edit(Guid id, EditProductViewModel viewModel)
         {
             if (id != viewModel.Id) return BadRequest();
@@ -122,12 +122,12 @@ namespace WebSupplier.WebApp.Controllers
 
             if (OperationValid()) return View(await PopulationSupplierAndCategory(viewModel));
 
-            TempData["Success"] = "Produto Editado com sucesso";
+            TempData["Success"] = "Product edited successfully.";
             return RedirectToAction(nameof(Edit), _mapper.Map<EditProductViewModel>(await _productService.FindById(id)));
         }
 
         [ClaimsAuthorizeAttribute("Product", "Delete")]
-        [HttpGet("deletar-produto/{id:guid}")]
+        [HttpGet("delete-product/{id:guid}")]
         public async Task<IActionResult> Delete(Guid id)
         {
             if (id == Guid.Empty) return BadRequest();
@@ -144,7 +144,7 @@ namespace WebSupplier.WebApp.Controllers
         }
 
         [ClaimsAuthorizeAttribute("Product", "Delete")]
-        [HttpPost("deletar-produto")]
+        [HttpPost("delete-product")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> ConfirmDelete(Guid id)
         {

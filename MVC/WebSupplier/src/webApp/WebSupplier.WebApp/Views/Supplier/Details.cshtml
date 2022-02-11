@@ -1,9 +1,9 @@
 ﻿@model SupplierViewModel
-@{
-    ViewData["Title"] = "Details";
-}
+@{ ViewData["Title"] = "Details"; }
 
-<h1>Details</h1>
+<h1>@ViewData["Title"]</h1>
+<br />
+<br />
 
 <table>
     <tr>
@@ -17,47 +17,39 @@
 
     @if (Model.PersonType == SupplierViewModel.Physical)
     {
-        <tr>
+<tr>
             <td>Name : </td>
             <td><label>@Model.FullName</label></td>
-        </tr>
-        <tr>
-            <td>Cpf : </td>
-            <td><label>@Model.Cpf</label></td>
-        </tr>
-        <tr>
-            <td>Birthdate : </td>
-            <td><label>@Model.BirthDate</label></td>
-        </tr>
-    }
-    else
-    {
-        <tr>
-            <td>Company Name : </td>
-            <td><label>@Model.CompanyName</label></td>
-        </tr>
-        <tr>
-            <td>Cnpj : </td>
-            <td><label>@Model.Cnpj</label></td>
-        </tr>
-        <tr>
-            <td>Open Date : </td>
-            <td><label>@Model.OpenDate</label></td>
-        </tr>
-    }
+            </tr>
+            <tr>
+                <td>Cpf : </td>
+                <td><label>@Model.Cpf</label></td>
+            </tr>
+            <tr>
+                <td>Birthdate : </td>
+                <td><label>@Model.BirthDate</label></td>
+            </tr>
+     }
+     else
+     {
+            <tr>
+                <td>Company Name : </td>
+                <td><label>@Model.CompanyName</label></td>
+            </tr>
+            <tr>
+                <td>Cnpj : </td>
+                <td><label>@Model.Cnpj</label></td>
+            </tr>
+            <tr>
+                <td>Open Date : </td>
+                <td><label>@Model.OpenDate</label></td>
+            </tr>
+}
 
 
     <tr>
         <td>Cellphone : </td>
-        <td><label>@Model.TelCelular</label></td>
-    </tr>
-    <tr>
-        <td>Phone : </td>
-        <td><label>@Model.TelHome</label></td>
-    </tr>
-    <tr>
-        <td>Comercial phone : </td>
-        <td><label>@Model.TelComercial</label></td>
+        <td><label>@Model.Telephone</label></td>
     </tr>
     <tr>
         <td>Address : </td>

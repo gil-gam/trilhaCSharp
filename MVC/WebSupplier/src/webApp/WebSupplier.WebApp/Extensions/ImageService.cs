@@ -25,7 +25,7 @@ namespace WebSupplier.WebApp.Extensions
 
                 if (!File.Exists(fileExist))
                 {
-                    _notificationService.AddErro("Ocorreu um erro ao salvar uma das fotos.");
+                    _notificationService.AddErro("An error occurred while saving one of the photos.");
                 }
                 File.Delete(fileExist);
             }

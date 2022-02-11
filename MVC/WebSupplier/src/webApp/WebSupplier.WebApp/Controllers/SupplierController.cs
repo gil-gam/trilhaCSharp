@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Mvc;
 using WebSupplier.Domain.Interfaces;
 using WebSupplier.Domain.Interfaces.Services;
 using WebSupplier.Domain.Models;
-using WebSupplier.Domain.Models.enums;
 using WebSupplier.WebApp.Extensions;
 using WebSupplier.WebApp.Models;
 using WebSupplier.WebApp.Models.Supplier;
@@ -89,7 +88,7 @@ namespace WebSupplier.WebApp.Controllers
             if (id == Guid.Empty) return BadRequest();
             var result = _mapper.Map<NewOrEditSupplierViewModel>(await _supplierService.FindById(id));
 
-            result.SetPhones();
+            //result.SetPhones();
 
             return View(result);
         }
@@ -123,7 +122,6 @@ namespace WebSupplier.WebApp.Controllers
             var result = _mapper.Map<SupplierViewModel>(await _supplierService.FindById(id));
 
             if (OperationValid()) return RedirectToAction(nameof(Index));
-            result.SetPhones();
             result.SetTypePerson();
             return View(result);
         }
@@ -137,7 +135,7 @@ namespace WebSupplier.WebApp.Controllers
             var result = _mapper.Map<SupplierViewModel>(await _supplierService.FindById(id));
 
             if (OperationValid()) return RedirectToAction(nameof(Index));
-            result.SetPhones();
+            //result.SetPhones();
             result.SetTypePerson();
             return View(result);
         }
@@ -154,7 +152,7 @@ namespace WebSupplier.WebApp.Controllers
             if (OperationValid())
             {
                 var result = _mapper.Map<SupplierViewModel>(await _supplierService.FindById(id));
-                result.SetPhones();
+                //result.SetPhones();
                 result.SetTypePerson();
                 return View(nameof(Delete), result);
             }
@@ -181,25 +179,33 @@ namespace WebSupplier.WebApp.Controllers
 
             return supplier;
         }
+        //private NewOrEditSupplierViewModel MappingPhone(NewOrEditSupplierViewModel viewModel)
+        //{
+        //    Phone telephone;
+        //    if (!string.IsNullOrEmpty(viewModel.Telephone))
+        //        telephone = _mapper.Map<Phone>(viewModel);
+            
+        //    // viewModel.Phones.Add(new PhoneViewModel() { Ddd = viewModel.Telephone[..2], Number = viewModel.Telephone[2..] });
+
+        //    //if (!string.IsNullOrEmpty(viewModel.Telephone))
+        //    //     viewModel.Phones.Add(new PhoneViewModel() { Ddd = viewModel.Telephone[..2], Number = viewModel.Telephone[2..] });
+
+
+        //    return viewModel;
+        //}
+
+
         private NewOrEditSupplierViewModel MappingPhone(NewOrEditSupplierViewModel viewModel)
         {
-            viewModel.Phones.Add(new PhoneViewModel() { Ddd = viewModel.TelCelular[..2], Number = viewModel.TelCelular[2..], PhoneType = PhoneType.Celular });
-
-            if (!string.IsNullOrEmpty(viewModel.TelComercial))
-                viewModel.Phones.Add(new PhoneViewModel() { Ddd = viewModel.TelComercial[..2], Number = viewModel.TelComercial[2..], PhoneType = PhoneType.Comercial });
-
-            if (!string.IsNullOrEmpty(viewModel.TelHome))
-                viewModel.Phones.Add(new PhoneViewModel() { Ddd = viewModel.TelHome[..2], Number = viewModel.TelHome[2..], PhoneType = PhoneType.Fixo });
-
+            viewModel.Phones.Add(new PhoneViewModel() { Ddd = viewModel.Telephone[..2], Number = viewModel.Telephone[2..] });
+                        
             return viewModel;
         }
         private NewOrEditSupplierViewModel RemoveMask(NewOrEditSupplierViewModel viewModel)
         {
             viewModel.Cnpj = viewModel.Cnpj?.Replace(".", "").Replace("-", "").Replace("/", "");
             viewModel.Cpf = viewModel.Cpf?.Replace(".", "").Replace("-", "");
-            viewModel.TelCelular = viewModel.TelCelular?.Replace(".", "").Replace("(", "").Replace(")", "").Replace("-", "").Replace(" ", "");
-            viewModel.TelHome = viewModel.TelHome?.Replace(".", "").Replace("(", "").Replace(")", "").Replace("-", "").Replace(" ", ""); ;
-            viewModel.TelComercial = viewModel.TelComercial?.Replace(".", "").Replace("(", "").Replace(")", "").Replace("-", "").Replace(" ", "");
+            viewModel.Telephone = viewModel.Telephone?.Replace(".", "").Replace("(", "").Replace(")", "").Replace("-", "").Replace(" ", "");
             viewModel.Address.ZipCode = viewModel.Address.ZipCode?.Replace("-", "");
 
             return viewModel;

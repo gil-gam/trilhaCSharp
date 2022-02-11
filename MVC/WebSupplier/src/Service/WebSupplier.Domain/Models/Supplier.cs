@@ -2,7 +2,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.Collections.Generic;
 using WebSupplier.Domain.Tools;
-using WebSupplier.Domain.Models.enums;
 
 namespace WebSupplier.Domain.Models
 {
@@ -29,7 +28,7 @@ namespace WebSupplier.Domain.Models
             FantasyName = fantasyName;
             AddAddress(new Address(Id, zipCode, street, number, neighborhood, city, state, complement, reference));
             AddEmail(new Email(Id, emailAddress));
-            AddPhone(new Phone(Id, ddd, celCelular, PhoneType.Celular));
+            AddPhone(new Phone(Id, ddd, celCelular));
         }
 
         public virtual void SetFantasyName(string value)
@@ -39,30 +38,24 @@ namespace WebSupplier.Domain.Models
         }
 
         public virtual void AddPhone(Phone phone)
-        {
-            DomainValidation.ValidateIfTrue(_phones.Count >= 3, "Maximum: 3 phones");
-
+        {          
             _phones.Add(phone);
         }
-        public virtual void UpdatePhone(string ddd, string phone, PhoneType phoneType)
-        {
-            DomainValidation.ValidateIfTrue(PhoneExist(phoneType), $"The type {phoneType} not exists for update.");
-
-            var phoneExist = _phones.Where(x => x.PhoneType == phoneType).FirstOrDefault();
-            phoneExist.SetPhone(ddd, phone, phoneType);
+        public virtual void UpdatePhone(string ddd, string phone)
+        {            
+            var phoneExist = _phones.FirstOrDefault();
+            phoneExist.SetPhone(ddd, phone);
 
         }
-        public virtual void RemovePhone(PhoneType phoneType)
-        {
-            DomainValidation.ValidateIfTrue(PhoneExist(phoneType), $"The type {phoneType} not exists for remove.");
-
-            var phoneExist = _phones.Where(x => x.PhoneType == phoneType).FirstOrDefault();
+        public virtual void RemovePhone(string ddd, string number)
+        {            
+            var phoneExist = _phones.FirstOrDefault();
             _phones.Remove(phoneExist);
 
         }
-        public bool PhoneExist(PhoneType phoneType)
+        public bool PhoneExist(string ddd, string number)
         {
-            return _phones.Where(x => x.PhoneType == phoneType).FirstOrDefault() == null;
+            return _phones.FirstOrDefault() == null;
         }
 
         public virtual void UpdateAddress(string zipCode, string street, string number, string neighborhood, string city, string state,
@@ -73,7 +66,6 @@ namespace WebSupplier.Domain.Models
         }
         private void AddAddress(Address address)
         {
-            DomainValidation.ValidateIfTrue(address == null, "The Address is mandatory.");
             Address = address;
         }
 
@@ -83,7 +75,6 @@ namespace WebSupplier.Domain.Models
         }
         private void AddEmail(Email email)
         {
-            DomainValidation.ValidateIfTrue(email == null, "The Email is mandatory.");
             Email = email;
         }
 

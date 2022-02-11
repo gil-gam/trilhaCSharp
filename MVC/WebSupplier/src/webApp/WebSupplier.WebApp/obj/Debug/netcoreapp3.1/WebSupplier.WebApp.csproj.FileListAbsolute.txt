@@ -463,6 +463,6 @@ C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\Web
 C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\WebSupplier\src\webApp\WebSupplier.WebApp\obj\Debug\netcoreapp3.1\WebSupplier.WebApp.dll
 C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\WebSupplier\src\webApp\WebSupplier.WebApp\obj\Debug\netcoreapp3.1\WebSupplier.WebApp.pdb
 C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\WebSupplier\src\webApp\WebSupplier.WebApp\obj\Debug\netcoreapp3.1\WebSupplier.WebApp.genruntimeconfig.cache
-C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\WebSupplier\src\webApp\WebSupplier.WebApp\obj\Debug\netcoreapp3.1\WebSupplier.WebApp.MvcApplicationPartsAssemblyInfo.cs
 C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\WebSupplier\src\webApp\WebSupplier.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Error.cshtml.g.cs
 C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\WebSupplier\src\webApp\WebSupplier.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Pagination\Default.cshtml.g.cs
+C:\GILBERTO\Gilberto\docs\NTT Data\trilha dev c#\exercicios\trilhaCSharp\MVC\WebSupplier\src\webApp\WebSupplier.WebApp\obj\Debug\netcoreapp3.1\WebSupplier.WebApp.MvcApplicationPartsAssemblyInfo.cs

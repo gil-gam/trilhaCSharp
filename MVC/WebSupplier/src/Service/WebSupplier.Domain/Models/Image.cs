@@ -24,7 +24,7 @@ namespace WebSupplier.Domain.Models
 
         public void SetImage(string value)
         {
-            DomainValidation.ValidateIsNullOrEmpty(value, "The Image is invalid.");
+            //DomainValidation.ValidateIsNullOrEmpty(value, "The Image is invalid.");
             ImagePath = value;
         }
 

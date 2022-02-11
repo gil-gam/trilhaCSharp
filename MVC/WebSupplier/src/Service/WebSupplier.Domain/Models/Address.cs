@@ -35,12 +35,12 @@ namespace WebSupplier.Domain.Models
         public void SetAddress(string zipCode, string street, string number, string neighborhood, string city, string state,
                         string complement = null, string reference = null)
         {
-            DomainValidation.ValidateIsNullOrEmpty(zipCode, "The CEP is mandatory.");
-            DomainValidation.ValidateIsNullOrEmpty(street, "The Street is mandatory.");
-            DomainValidation.ValidateIsNullOrEmpty(number, "The Number is mandatory.");
-            DomainValidation.ValidateIsNullOrEmpty(neighborhood, "The Neighborhood is mandatory.");
-            DomainValidation.ValidateIsNullOrEmpty(city, "The City is mandatory.");
-            DomainValidation.ValidateIsNullOrEmpty(state, "The State is mandatory.");
+            //DomainValidation.ValidateIsNullOrEmpty(zipCode, "The CEP is mandatory.");
+            //DomainValidation.ValidateIsNullOrEmpty(street, "The Street is mandatory.");
+            //DomainValidation.ValidateIsNullOrEmpty(number, "The Number is mandatory.");
+            //DomainValidation.ValidateIsNullOrEmpty(neighborhood, "The Neighborhood is mandatory.");
+            //DomainValidation.ValidateIsNullOrEmpty(city, "The City is mandatory.");
+            //DomainValidation.ValidateIsNullOrEmpty(state, "The State is mandatory.");
 
             ZipCode = zipCode;
             Street = street;

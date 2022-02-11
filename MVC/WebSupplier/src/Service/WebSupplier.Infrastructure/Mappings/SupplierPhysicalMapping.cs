@@ -8,7 +8,8 @@ namespace WebSupplier.Infrastructure.Mappings
     {
         public void Configure(EntityTypeBuilder<SupplierPhysical> builder)
         {                        
-            builder.Property(x => x.Cpf)                
+            builder.Property(x => x.Cpf)
+            .IsRequired()
             .HasColumnType("varchar(11)");
         }
     }

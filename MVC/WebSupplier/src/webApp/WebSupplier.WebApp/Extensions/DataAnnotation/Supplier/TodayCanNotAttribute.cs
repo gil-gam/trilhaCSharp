@@ -11,7 +11,7 @@ namespace WebSupplier.WebApp.Extensions.DataAnnotation.Supplier
             if(value != null)
             {
                 DateTime date = DateTime.Parse(value.ToString());
-                if (date.Date == DateTime.Now.Date) return new ValidationResult("Data não pode ser igual Hoje");
+                if (date.Date == DateTime.Now.Date) return new ValidationResult("Date can’t be today.");
             }
             return ValidationResult.Success;
         }

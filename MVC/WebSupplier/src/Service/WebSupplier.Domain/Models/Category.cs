@@ -23,7 +23,7 @@ namespace WebSupplier.Domain.Models
 
         public void SetName(string value)
         {
-            DomainValidation.ValidateIsNullOrEmpty(value, "The Name is mandatory.");
+            //DomainValidation.ValidateIsNullOrEmpty(value, "The Name is mandatory.");
             Name = value;
         }
 

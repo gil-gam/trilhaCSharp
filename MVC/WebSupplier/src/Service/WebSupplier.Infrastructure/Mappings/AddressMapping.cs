@@ -11,21 +11,16 @@ namespace WebSupplier.Infrastructure.Mappings
             builder.HasKey(x => x.Id);
 
             builder.Property(x => x.ZipCode)
-                .IsRequired()
                 .HasColumnType("varchar(8)");
 
-            builder.Property(x => x.Street)
-                .IsRequired();
+            builder.Property(x => x.Street);
 
             builder.Property(x => x.Number)
-                .IsRequired()
                 .HasColumnType("varchar(10)");
 
-            builder.Property(x => x.City)
-                .IsRequired();
+            builder.Property(x => x.City);
 
             builder.Property(x => x.State)
-                .IsRequired()
             .HasColumnType("char(2)");
 
             builder.ToTable("TB_Address");

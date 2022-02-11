@@ -1,14 +1,41 @@
 ﻿@model PaginationViewModel<ProductViewModel>
 
-@{
-    ViewData["Title"] = "Products";
-}
+@{ ViewData["Title"] = "Products"; }
 
-<a asp-action="New" class="btn btn-primary">Add Product</a>
-
+<h1>@ViewData["Title"]</h1>
 <br />
+<br />
+
 <vc:summary></vc:summary>
-<br />
+
+<form asp-action="Index" asp-controller="ProductController" method="get">
+    <div class="form-row">
+        <div class="form-group col-md-2">
+            <select name="pageSize" id="pageSize" value="@TempData["Size"]" class="form-control">
+                <option value="10">10</option>
+                <option value="50">50</option>
+                <option value="@int.MaxValue">All</option>
+            </select>
+        </div>
+        <div class="form-group col-md-4"></div>
+
+        <div class="form-group col-md-5">
+            <input type="text" class="form-control" name="query" id="query" value="@TempData["Query"]" placeholder="Search for Products" />
+        </div>
+        <div class="form-group col-md-1">
+            <button type="submit" class="btn-primary">Search</button>
+            <br />
+            <br />
+        </div>
+
+        @if (User.Identity.Name.Contains("@admin.com"))
+        {
+            <div class="form-group col-md-1">
+                <a asp-action="New" class="btn btn-primary">Add Product</a>
+            </div>
+        }
+    </div>
+</form>
 
 <table class="table">
     <thead class="thead-dark">
@@ -23,14 +50,15 @@
         @foreach (var item in Model.List)
         {
             <tr>
-                <th>@item.Name</th>
-                <td>@item.InsertDate</td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-secondary">Edit</a>
-                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-warning">Details</a>
-                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
-                </td>
-            </tr>
-        }
+            <th>@item.Name</th>
+            <td>@item.InsertDate</td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-secondary">Edit</a>
+                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-warning">Details</a>
+                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+            </td>
+            </tr>}
     </tbody>
 </table>
+
+<vc:pagination model-pagination="@Model"></vc:pagination>

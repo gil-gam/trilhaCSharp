@@ -2,7 +2,6 @@
 using WebSupplier.Domain.Interfaces.Repositorys;
 using WebSupplier.Domain.Interfaces.Services;
 using WebSupplier.Domain.Models;
-using WebSupplier.Domain.Models.enums;
 using WebSupplier.Domain.Models.Validation;
 using WebSupplier.Domain.Tools;
 using System;
@@ -61,15 +60,15 @@ namespace WebSupplier.Domain.Services
                 }
 
 
-                var phone = supplier.Phones.Where(x => x.PhoneType == Models.enums.PhoneType.Celular).FirstOrDefault();
+                var phone = supplier.Phones.FirstOrDefault();
                 SupplierJuridical model = new SupplierJuridical(viewModel.CompanyName, viewModel.Cnpj, viewModel.Active, viewModel.FantasyName,
                                                                     viewModel.Address.ZipCode, viewModel.Address.Street, viewModel.Address.Number, viewModel.Address.Neighborhood, viewModel.Address.City,
                                                                     viewModel.Address.State, viewModel.Address.Complement, viewModel.Address.Reference,
                                                                     viewModel.Email.EmailAddress,
                                                                     phone.Ddd, phone.Number);
-                foreach (var item in supplier.Phones.Where(x => x.PhoneType != Models.enums.PhoneType.Celular).ToList())
+                foreach (var item in supplier.Phones.ToList())
                 {
-                    model.AddPhone(new Phone(model.Id, item.Ddd, item.Number, item.PhoneType));
+                    model.AddPhone(new Phone(model.Id, item.Ddd, item.Number));
                 }
 
                 await _supplierRepository.InsertJu(model);
@@ -92,16 +91,18 @@ namespace WebSupplier.Domain.Services
                 }
 
 
-                var phone = supplier.Phones.Where(x => x.PhoneType == Models.enums.PhoneType.Celular).FirstOrDefault();
+                var phone = supplier.Phones.FirstOrDefault();               
+
                 SupplierPhysical model = new SupplierPhysical(viewModel.FullName, viewModel.Cpf, viewModel.Active, viewModel.FantasyName,
                                                                     viewModel.Address.ZipCode, viewModel.Address.Street, viewModel.Address.Number, viewModel.Address.Neighborhood, viewModel.Address.City,
                                                                     viewModel.Address.State, viewModel.Address.Complement, viewModel.Address.Reference,
                                                                     viewModel.Email.EmailAddress,
                                                                     phone.Ddd, phone.Number);
+             
 
-                foreach (var item in supplier.Phones.Where(x => x.PhoneType != Models.enums.PhoneType.Celular).ToList())
+                foreach (var item in supplier.Phones.ToList())
                 {
-                    model.AddPhone(new Phone(model.Id, item.Ddd, item.Number, item.PhoneType));
+                    model.AddPhone(new Phone(model.Id, item.Ddd, item.Number));
                 }
 
                 await _supplierRepository.InsertPh(model);
@@ -130,65 +131,18 @@ namespace WebSupplier.Domain.Services
                                                 supplier.Address.Neighborhood, supplier.Address.City, supplier.Address.State,
                                                 supplier.Address.Complement, supplier.Address.Reference);
 
-            var celViewModel = supplier.Phones.Where(x => x.PhoneType == PhoneType.Celular).FirstOrDefault();
-            var fixoViewModel = supplier.Phones.Where(x => x.PhoneType == PhoneType.Fixo).FirstOrDefault();
-            var comercialViewModel = supplier.Phones.Where(x => x.PhoneType == PhoneType.Comercial).FirstOrDefault();
+            var phoneViewModel = supplier.Phones.FirstOrDefault();           
 
-            if (celViewModel != null)
+            if (phoneViewModel == null)
             {
-                if (!modelDb.PhoneExist(PhoneType.Celular))
-                    modelDb.UpdatePhone(celViewModel.Ddd, celViewModel.Number, PhoneType.Celular);
+                return;                
             }
             else
-            {
-                Notify("Mobile Phone is mandatory.");
-                return;
+            {                 
+                 modelDb.UpdatePhone(phoneViewModel.Ddd, phoneViewModel.Number);
             }
 
-            if (fixoViewModel != null)
-            {
-
-                if (!modelDb.PhoneExist(PhoneType.Fixo))
-                    modelDb.UpdatePhone(fixoViewModel.Ddd, fixoViewModel.Number, PhoneType.Fixo);
-                else
-                {
-                    var newPhone = new Phone(modelDb.Id, fixoViewModel.Ddd, fixoViewModel.Number, PhoneType.Fixo);
-                    modelDb.AddPhone(newPhone);
-                    await _supplierRepository.InsertPhone(newPhone);
-                }
-
-            }
-            else
-            {
-                if (!modelDb.PhoneExist(PhoneType.Fixo))
-                {
-                    var phoneRemove = modelDb.Phones.Where(x => x.PhoneType == PhoneType.Fixo).First();
-                    modelDb.RemovePhone(PhoneType.Fixo);
-                    await _supplierRepository.RemovePhone(phoneRemove);
-                }
-
-            }
-
-            if (comercialViewModel != null)
-            {
-                if (!modelDb.PhoneExist(PhoneType.Comercial))
-                    modelDb.UpdatePhone(comercialViewModel.Ddd, comercialViewModel.Number, PhoneType.Comercial);
-                else
-                {
-                    var newPhone = new Phone(modelDb.Id, comercialViewModel.Ddd, comercialViewModel.Number, PhoneType.Comercial);
-                    modelDb.AddPhone(newPhone);
-                    await _supplierRepository.InsertPhone(newPhone);
-                }
-            }
-            else
-            {
-                if (!modelDb.PhoneExist(PhoneType.Comercial))
-                {
-                    var phoneRemove = modelDb.Phones.Where(x => x.PhoneType == PhoneType.Comercial).First();
-                    modelDb.RemovePhone(PhoneType.Comercial);
-                    await _supplierRepository.RemovePhone(phoneRemove);
-                }
-            }
+                    
 
             if (supplier is SupplierJuridical)
             {
@@ -227,15 +181,12 @@ namespace WebSupplier.Domain.Services
             if (supplier is SupplierJuridical) RunValidation(new SupplierJuridicalValidation(), (SupplierJuridical)supplier);
             else RunValidation(new SupplierPhysicalValidation(), (SupplierPhysical)supplier);
 
-            if (supplier.Address == null) Notify("Address is mandatory.");
-            else RunValidation(new AddressValidation(), supplier.Address);
+            RunValidation(new AddressValidation(), supplier.Address);
 
-            if (supplier.Email == null) Notify("Email is mandatory.");
-            else RunValidation(new EmailValidation(), supplier.Email);
+            RunValidation(new EmailValidation(), supplier.Email);
 
-            if (supplier.Phones.Count < 1) Notify("Phone is mandatory.");
-            else foreach (var item in supplier.Phones)
-                    RunValidation(new PhoneValidation(), item);
+            foreach (var item in supplier.Phones)
+                RunValidation(new PhoneValidation(), item);
 
             if (!OperationValid())
                 return true;
@@ -262,7 +213,7 @@ namespace WebSupplier.Domain.Services
             }
             catch
             {
-                Notify("Não é possivel excluir esse fornecedor, o mesmo possui produtos atrelados. Exclusa os produtos primeiro e tente novamente.");
+                Notify("It is not possible to exclude this supplier. Delete the products and try again.");
             }
         }
     }

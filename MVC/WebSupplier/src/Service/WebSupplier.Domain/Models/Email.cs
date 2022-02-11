@@ -23,7 +23,7 @@ namespace WebSupplier.Domain.Models
 
     public void SetEmail(string value)
     {
-        DomainValidation.ValidateIsNullOrEmpty(value, "The Email is mandatory.");
+        //DomainValidation.ValidateIsNullOrEmpty(value, "The Email is mandatory.");
         EmailAddress = value;
     }
 

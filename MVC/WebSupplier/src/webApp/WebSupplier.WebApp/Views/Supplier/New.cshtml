@@ -1,11 +1,12 @@
 ﻿@model NewOrEditSupplierViewModel
-@{
-    ViewData["Title"] = "New Supplier";
-    Model.SupplierType = SupplierType.Juridical;
-}
+@{ ViewData["Title"] = "New Supplier";
+    Model.SupplierType = SupplierType.Juridical; }
+
 
 <h1>@ViewData["Title"]</h1>
 <br />
+<br />
+
 <vc:summary></vc:summary>
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -103,8 +104,6 @@
 
 @section Scripts {
 
-        @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
 
 }
