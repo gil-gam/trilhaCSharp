@@ -6,6 +6,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\**" />
+    <Content Remove="Migrations\**" />
+    <EmbeddedResource Remove="Migrations\**" />
+    <None Remove="Migrations\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="appsettings.Production.json" />
     <Content Remove="wwwroot\ReportSheets_Temp\76d71bb7-fc05-4bfa-805e-2331e1b52b30_2022-01-17 11-15-54.xlsx" />
   </ItemGroup>
 
@@ -17,6 +25,12 @@
     <_ContentIncludedByDefault Remove="wwwroot\images\product\34f3dca5-9172-47ed-8e84-87113cac7e8c.jpg" />
     <_ContentIncludedByDefault Remove="wwwroot\images\product\de3db9ff-2098-4c34-a991-7d07d7129c13.jpg" />
     <_ContentIncludedByDefault Remove="wwwroot\images\product\e65d1fc8-e9de-4788-9364-c1c3950dc5ca.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Migrations\00000000000000_CreateIdentitySchema.cs" />
+    <Compile Include="Migrations\00000000000000_CreateIdentitySchema.Designer.cs" />
+    <Compile Include="Migrations\ApplicationDbContextModelSnapshot.cs" />
   </ItemGroup>
 
   <ItemGroup>

@@ -10,6 +10,7 @@ using WebSupplier.WebApp.Models.Supplier;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 
 namespace WebSupplier.WebApp.Controllers
 {
@@ -76,7 +77,7 @@ namespace WebSupplier.WebApp.Controllers
             //verificar se a operacao foi valida
             if (OperationValid()) return View(viewModel);
             TempData["Success"] = "Registration made with success.";
-            
+
             // retorna para o lugar correto
             return RedirectToAction(nameof(Index));
         }
@@ -179,28 +180,22 @@ namespace WebSupplier.WebApp.Controllers
 
             return supplier;
         }
-        //private NewOrEditSupplierViewModel MappingPhone(NewOrEditSupplierViewModel viewModel)
-        //{
-        //    Phone telephone;
-        //    if (!string.IsNullOrEmpty(viewModel.Telephone))
-        //        telephone = _mapper.Map<Phone>(viewModel);
-            
-        //    // viewModel.Phones.Add(new PhoneViewModel() { Ddd = viewModel.Telephone[..2], Number = viewModel.Telephone[2..] });
-
-        //    //if (!string.IsNullOrEmpty(viewModel.Telephone))
-        //    //     viewModel.Phones.Add(new PhoneViewModel() { Ddd = viewModel.Telephone[..2], Number = viewModel.Telephone[2..] });
-
-
-        //    return viewModel;
-        //}
-
-
+        
         private NewOrEditSupplierViewModel MappingPhone(NewOrEditSupplierViewModel viewModel)
         {
-            viewModel.Phones.Add(new PhoneViewModel() { Ddd = viewModel.Telephone[..2], Number = viewModel.Telephone[2..] });
-                        
+            if (!string.IsNullOrEmpty(viewModel.Telephone))
+            {
+                viewModel.Phones.Add(new PhoneViewModel() { Ddd = viewModel.Telephone[..2], Number = viewModel.Telephone[2..] });
+                //Regex formatPhone = new Regex(@"\d({2})\d{4}-\d{5}");
+            }
+            else
+            {
+                viewModel.Phones.Add(new PhoneViewModel() { Ddd = null, Number = null });
+            }
+
             return viewModel;
         }
+
         private NewOrEditSupplierViewModel RemoveMask(NewOrEditSupplierViewModel viewModel)
         {
             viewModel.Cnpj = viewModel.Cnpj?.Replace(".", "").Replace("-", "").Replace("/", "");

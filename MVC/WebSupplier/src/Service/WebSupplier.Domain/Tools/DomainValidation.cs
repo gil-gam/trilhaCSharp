@@ -88,6 +88,12 @@
                 throw new DomainException(message);
             }
         }
+
+        internal static void ValidateIfLessThan(bool v1, string v2)
+        {
+            throw new System.NotImplementedException();
+        }
+
         public static void ValidateIfLessThan(float value, float min, string message)
         {
             if (value < min)

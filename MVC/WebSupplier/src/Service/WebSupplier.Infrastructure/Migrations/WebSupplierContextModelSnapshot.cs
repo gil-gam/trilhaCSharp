@@ -221,6 +221,9 @@ namespace WebSupplier.Infrastructure.Migrations
                     b.Property<bool>("Active")
                         .HasColumnType("bit");
 
+                    b.Property<DateTime>("BirthDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("Discriminator")
                         .IsRequired()
                         .HasColumnType("varchar(256)");
@@ -261,9 +264,6 @@ namespace WebSupplier.Infrastructure.Migrations
             modelBuilder.Entity("WebSupplier.Domain.Models.SupplierPhysical", b =>
                 {
                     b.HasBaseType("WebSupplier.Domain.Models.Supplier");
-
-                    b.Property<DateTime>("BirthDate")
-                        .HasColumnType("datetime2");
 
                     b.Property<string>("Cpf")
                         .IsRequired()

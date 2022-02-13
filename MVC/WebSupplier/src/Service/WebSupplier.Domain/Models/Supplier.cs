@@ -2,6 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.Collections.Generic;
 using WebSupplier.Domain.Tools;
+using System;
 
 namespace WebSupplier.Domain.Models
 {
@@ -19,6 +20,8 @@ namespace WebSupplier.Domain.Models
 
         private List<Product> _products = new List<Product>();
         public IReadOnlyCollection<Product> Products => _products;
+                
+        public DateTime BirthDate { get; set; }
 
         protected Supplier() { }
         protected Supplier(bool active, string fantasyName, string zipCode, string street, string number, string neighborhood, string city, string state,
@@ -77,7 +80,5 @@ namespace WebSupplier.Domain.Models
         {
             Email = email;
         }
-
-
     }
 }

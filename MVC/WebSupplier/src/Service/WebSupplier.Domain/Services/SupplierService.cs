@@ -10,10 +10,11 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
 
+
 namespace WebSupplier.Domain.Services
 {
-    public class SupplierService : ServiceBase<Supplier>, ISupplierService
-    {
+    public class SupplierService : ServiceBase<Supplier>, ISupplierService    {
+
         private readonly ISupplierRepository _supplierRepository;
         private readonly INotificationService _notificationService;
 
@@ -30,6 +31,7 @@ namespace WebSupplier.Domain.Services
             else
                 return await _supplierRepository.Pagination(page, size, x => x.FantasyName.Contains(query));
         }
+
         public override async Task<Supplier> FindById(Guid id)
         {
             var result = await _supplierRepository.FindById(id);
@@ -77,6 +79,7 @@ namespace WebSupplier.Domain.Services
             {
                 var viewModel = (SupplierPhysical)supplier;
                 var result = await _supplierRepository.Find(x => x.Cpf.Contains(viewModel.Cpf) || x.FantasyName.Contains(viewModel.FantasyName));
+
                 if (result != null)
                 {
                     if (result.Cpf == viewModel.Cpf)
@@ -91,26 +94,34 @@ namespace WebSupplier.Domain.Services
                 }
 
 
-                var phone = supplier.Phones.FirstOrDefault();               
-
-                SupplierPhysical model = new SupplierPhysical(viewModel.FullName, viewModel.Cpf, viewModel.Active, viewModel.FantasyName,
+                var phone = supplier.Phones.FirstOrDefault();
+                if (supplier.Phones.Count() == 0)
+                {
+                    SupplierPhysical model = new SupplierPhysical(viewModel.FullName, viewModel.Cpf, viewModel.Active, viewModel.FantasyName,
                                                                     viewModel.Address.ZipCode, viewModel.Address.Street, viewModel.Address.Number, viewModel.Address.Neighborhood, viewModel.Address.City,
                                                                     viewModel.Address.State, viewModel.Address.Complement, viewModel.Address.Reference,
-                                                                    viewModel.Email.EmailAddress,
-                                                                    phone.Ddd, phone.Number);
-             
-
-                foreach (var item in supplier.Phones.ToList())
-                {
-                    model.AddPhone(new Phone(model.Id, item.Ddd, item.Number));
+                                                                    viewModel.Email.EmailAddress);
                 }
+                else
+                {
+                    SupplierPhysical model = new SupplierPhysical(viewModel.FullName, viewModel.Cpf, viewModel.Active, viewModel.FantasyName,
+                                                                        viewModel.Address.ZipCode, viewModel.Address.Street, viewModel.Address.Number, viewModel.Address.Neighborhood, viewModel.Address.City,
+                                                                        viewModel.Address.State, viewModel.Address.Complement, viewModel.Address.Reference,
+                                                                        viewModel.Email.EmailAddress,
+                                                                        phone.Ddd, phone.Number);
+                    foreach (var item in supplier.Phones.ToList())
+                    {
+                        model.AddPhone(new Phone(model.Id, item.Ddd, item.Number));
+                    }
 
-                await _supplierRepository.InsertPh(model);
-
+                    await _supplierRepository.InsertPh(model);
+                }
             }
 
             await _supplierRepository.SaveChanges();
         }
+
+
         public async Task Update(Supplier supplier)
         {
             if (!ValidatiSupplier(supplier)) return;
@@ -143,7 +154,6 @@ namespace WebSupplier.Domain.Services
             }
 
                     
-
             if (supplier is SupplierJuridical)
             {
                 var modelDbJuridical = (SupplierJuridical)modelDb;
@@ -160,7 +170,7 @@ namespace WebSupplier.Domain.Services
                 var view = (SupplierPhysical)supplier;
                 modelDbPhysical.SetFantasyName(view.FantasyName);
                 modelDbPhysical.SetFullName(view.FullName);
-                modelDbPhysical.SetBirthDate(view.BirthDate);
+                modelDbPhysical.SetBirthDate(view.BirthDate);                               
 
                 await _supplierRepository.Update(modelDbPhysical);
             }
@@ -181,6 +191,13 @@ namespace WebSupplier.Domain.Services
             if (supplier is SupplierJuridical) RunValidation(new SupplierJuridicalValidation(), (SupplierJuridical)supplier);
             else RunValidation(new SupplierPhysicalValidation(), (SupplierPhysical)supplier);
 
+            if (supplier.Address == null) Notify("Address is mandatory.");
+            else RunValidation(new AddressValidation(), supplier.Address);
+
+            if (Convert.ToDateTime(supplier.BirthDate).AddYears(18) > DateTime.Now)            
+                Notify("Supplier must be at least 18 years old.");
+             
+            
             RunValidation(new AddressValidation(), supplier.Address);
 
             RunValidation(new EmailValidation(), supplier.Email);

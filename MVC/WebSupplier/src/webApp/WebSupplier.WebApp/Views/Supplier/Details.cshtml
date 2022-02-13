@@ -1,5 +1,6 @@
 ﻿@model SupplierViewModel
 @{ ViewData["Title"] = "Details"; }
+@using System.Text.RegularExpressions;
 
 <h1>@ViewData["Title"]</h1>
 <br />
@@ -47,10 +48,11 @@
 }
 
 
-    <tr>
-        <td>Cellphone : </td>
-        <td><label>@Model.Telephone</label></td>
-    </tr>
+<tr>
+    <td>Phone : </td>
+    <td><label>@Model.Phones.FirstOrDefault()</label></td>
+       
+</tr>
     <tr>
         <td>Address : </td>
         <td><label>@Model.Address?.ToString()</label></td>

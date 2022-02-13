@@ -52,6 +52,7 @@ namespace WebSupplier.Infrastructure.Data
             foreach (var relationship in modelBuilder.Model.GetEntityTypes().SelectMany(e => e.GetForeignKeys()))
                 relationship.DeleteBehavior = DeleteBehavior.ClientSetNull;
 
+        
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(WebSupplierContext).Assembly);
 
             base.OnModelCreating(modelBuilder);
