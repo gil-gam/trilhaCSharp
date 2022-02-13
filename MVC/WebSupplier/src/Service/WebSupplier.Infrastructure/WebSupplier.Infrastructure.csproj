@@ -11,6 +11,16 @@
     <Compile Remove="Migrations\20220210015637_Two - Cópia.Designer.cs" />
     <Compile Remove="Migrations\20220211181307_Init2 - Cópia.cs" />
     <Compile Remove="Migrations\20220211181307_Init2 - Cópia.Designer.cs" />
+    <Compile Remove="Migrations\20220213035503_Initial2222.cs" />
+    <Compile Remove="Migrations\20220213035503_Initial2222.Designer.cs" />
+    <Compile Remove="Migrations\20220213035540_Two.cs" />
+    <Compile Remove="Migrations\20220213035540_Two.Designer.cs" />
+    <Compile Remove="Migrations\20220213202007_Initial.cs" />
+    <Compile Remove="Migrations\20220213202007_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20220213202227_Initial.cs" />
+    <Compile Remove="Migrations\20220213202227_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20220213202245_Two.cs" />
+    <Compile Remove="Migrations\20220213202245_Two.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

@@ -67,7 +67,7 @@ namespace WebSupplier.Domain.Models
         public void SetBirthDate(DateTime value)
         {
             DomainValidation.ValidateIfTrue(value.Date == DateTime.Now.Date, "BirthDate cannot be equal to today.");
-            DomainValidation.ValidateIfTrue(value.Date.AddYears(18) > DateTime.Now, "Supplier must be at least 18 years old.");
+            DomainValidation.ValidateIfTrue(value.Date.AddYears(18) > DateTime.Now.Date, "Supplier must be at least 18 years old.");
                         
             BirthDate = value;
         }
