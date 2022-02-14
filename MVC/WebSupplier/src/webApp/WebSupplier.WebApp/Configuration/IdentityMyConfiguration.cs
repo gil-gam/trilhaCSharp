@@ -4,7 +4,7 @@ using WebSupplier.WebApp.Data;
 using System;
 
 namespace WebSupplier.WebApp.Configuration
-{
+{   
     public static class IdentityMyConfiguration
     {
         public static void IdentityMyConfig(this IServiceCollection services)
